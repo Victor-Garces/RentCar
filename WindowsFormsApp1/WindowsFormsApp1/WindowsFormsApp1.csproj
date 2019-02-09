@@ -151,7 +151,6 @@
   <ItemGroup>
     <Compile Include="DataLayer\Models\User.cs" />
     <Compile Include="DataLayer\Models\VehicleType.cs" />
-    <Compile Include="DataLayer\RentCarContext.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,15 +169,6 @@
     <Compile Include="Forms\VehicleTypeManagement.Designer.cs">
       <DependentUpon>VehicleTypeManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190128223711_AddedUserTable.cs" />
-    <Compile Include="Migrations\20190128223711_AddedUserTable.designer.cs">
-      <DependentUpon>20190128223711_AddedUserTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190129002200_AddedVehicleTypeTable.cs" />
-    <Compile Include="Migrations\20190129002200_AddedVehicleTypeTable.designer.cs">
-      <DependentUpon>20190129002200_AddedVehicleTypeTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\RentCarContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
