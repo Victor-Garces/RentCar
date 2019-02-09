@@ -1,0 +1,303 @@
+﻿<root>
+    <xsd:schema id="root"
+        xmlns=""
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+    <data name="BrandPlural" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+    <data name="Brand_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Brand_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="Brand_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="ClientPlural" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+    <data name="Client_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Client_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+    <data name="Client_Identification" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+    <data name="Client_CrCard" xml:space="preserve">
+    <value>Cr Card</value>
+  </data>
+    <data name="Client_CreditLimit" xml:space="preserve">
+    <value>Credit Limit</value>
+  </data>
+    <data name="Client_PersonType" xml:space="preserve">
+    <value>Person Type</value>
+  </data>
+    <data name="Client_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+    <data name="EmployeePlural" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+    <data name="Employee_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Employee_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+    <data name="Employee_Identification" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+    <data name="Employee_WorkShift" xml:space="preserve">
+    <value>Work Shift</value>
+  </data>
+    <data name="Employee_PercentCommission" xml:space="preserve">
+    <value>Percent Commission</value>
+  </data>
+    <data name="Employee_AdmissionDate" xml:space="preserve">
+    <value>Admission Date</value>
+  </data>
+    <data name="Employee_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="FuelType" xml:space="preserve">
+    <value>Fuel Type</value>
+  </data>
+    <data name="FuelTypePlural" xml:space="preserve">
+    <value>Fuel Types</value>
+  </data>
+    <data name="FuelType_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="FuelType_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="FuelType_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Inspection" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+    <data name="InspectionPlural" xml:space="preserve">
+    <value>Inspections</value>
+  </data>
+    <data name="Inspection_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Inspection_HasCarvings" xml:space="preserve">
+    <value>Has Carvings</value>
+  </data>
+    <data name="Inspection_FuelAmount" xml:space="preserve">
+    <value>Fuel Amount</value>
+  </data>
+    <data name="Inspection_HasSpareRubber" xml:space="preserve">
+    <value>Has Spare Rubber</value>
+  </data>
+    <data name="Inspection_HasACat" xml:space="preserve">
+    <value>Has ACat</value>
+  </data>
+    <data name="Inspection_HasGlassBreaks" xml:space="preserve">
+    <value>Has Glass Breaks</value>
+  </data>
+    <data name="Inspection_StateFirstRubber" xml:space="preserve">
+    <value>State First Rubber</value>
+  </data>
+    <data name="Inspection_StateSecondRubber" xml:space="preserve">
+    <value>State Second Rubber</value>
+  </data>
+    <data name="Inspection_StateThirdRubber" xml:space="preserve">
+    <value>State Third Rubber</value>
+  </data>
+    <data name="Inspection_StateFourthRubber" xml:space="preserve">
+    <value>State Fourth Rubber</value>
+  </data>
+    <data name="Inspection_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+    <data name="Inspection_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Inspection_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="Inspection_Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+    <data name="Inspection_Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+    <data name="Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+    <data name="VehiclePlural" xml:space="preserve">
+    <value>Vehicles</value>
+  </data>
+    <data name="Vehicle_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Vehicle_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="Vehicle_ChassisNumber" xml:space="preserve">
+    <value>Chassis Number</value>
+  </data>
+    <data name="Vehicle_MotorNumber" xml:space="preserve">
+    <value>Motor Number</value>
+  </data>
+    <data name="Vehicle_PlateNumber" xml:space="preserve">
+    <value>Plate Number</value>
+  </data>
+    <data name="Vehicle_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Vehicle_Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+    <data name="Vehicle_FuelType" xml:space="preserve">
+    <value>Fuel Type</value>
+  </data>
+    <data name="Vehicle_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+    <data name="Vehicle_VehicleType" xml:space="preserve">
+    <value>Vehicle Type</value>
+  </data>
+    <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+    <data name="ModelPlural" xml:space="preserve">
+    <value>Models</value>
+  </data>
+    <data name="Model_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Model_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="Model_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Model_Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+    <data name="VehicleType" xml:space="preserve">
+    <value>Vehicle Type</value>
+  </data>
+    <data name="VehicleTypePlural" xml:space="preserve">
+    <value>Vehicle Types</value>
+  </data>
+    <data name="VehicleType_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="VehicleType_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+    <data name="VehicleType_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Rent" xml:space="preserve">
+    <value>Rent</value>
+  </data>
+    <data name="RentPlural" xml:space="preserve">
+    <value>Rents</value>
+  </data>
+    <data name="Rent_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Rent_RentDateTime" xml:space="preserve">
+    <value>Rent Date Time</value>
+  </data>
+    <data name="Rent_ReturnDateTime" xml:space="preserve">
+    <value>Return Date Time</value>
+  </data>
+    <data name="Rent_AmountPerDay" xml:space="preserve">
+    <value>Amount Per Day</value>
+  </data>
+    <data name="Rent_DaysQuantity" xml:space="preserve">
+    <value>Days Quantity</value>
+  </data>
+    <data name="Rent_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+    <data name="Rent_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+    <data name="Rent_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="Rent_Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+    <data name="Rent_Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+</root>
