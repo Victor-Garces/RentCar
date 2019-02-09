@@ -53,12 +53,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataLayer\Configurations\BrandConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\ClientConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\EmployeeConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\FuelTypeConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\InspectionConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\RentConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\VehicleConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\VehicleTypeConfiguration.cs" />
     <Compile Include="DataLayer\Models\Brand.cs" />
     <Compile Include="DataLayer\Models\Client.cs" />
     <Compile Include="DataLayer\Models\Employee.cs" />
     <Compile Include="DataLayer\Models\FuelType.cs" />
     <Compile Include="DataLayer\Models\Inspection.cs" />
     <Compile Include="DataLayer\Models\Model.cs" />
+    <Compile Include="DataLayer\Configurations\ModelConfiguration.cs" />
     <Compile Include="DataLayer\Models\Rent.cs" />
     <Compile Include="DataLayer\Models\Vehicle.cs" />
     <Compile Include="DataLayer\Models\VehicleType.cs" />
@@ -71,6 +80,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
