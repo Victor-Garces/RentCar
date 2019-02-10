@@ -29,14 +29,11 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemName" Binding="{Binding Entity.Name, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIdentification" Binding="{Binding Entity.Identification, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCreditCarNumber" Binding="{Binding Entity.CreditCarNumber, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCreditLimit" Binding="{Binding Entity.CreditLimit, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
                 <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding ClientInspectionsDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:RentCarContextResources.InspectionPlural}">
                     <dxg:GridControl x:Name="ClientInspectionsDetailsGrid" dx:DXSerializer.SerializationID="ClientInspectionsDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
@@ -53,8 +50,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="HasReplacementRubber" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasHydraulicJack" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasGlassBreaks" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Inspection_Vehicle}" ReadOnly="True" />
                         </dxg:GridControl.Columns>
                         <dxg:GridControl.TotalSummary>
@@ -85,8 +80,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="DayQuantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="Comment" />
                             <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Employee.Name" Header="{x:Static localization:RentCarContextResources.Rent_Employee}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Rent_Vehicle}" ReadOnly="True" />
                         </dxg:GridControl.Columns>

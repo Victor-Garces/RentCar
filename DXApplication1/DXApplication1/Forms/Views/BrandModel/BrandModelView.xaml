@@ -29,11 +29,8 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemBrand" Binding="{Binding Entity.Brand, Mode=OneTime}">
                 <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.BrandId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpBrands.Entities}" ValueMember="Id" DisplayMember="Description">
                     <dxg:LookUpEdit.PopupContentTemplate>
@@ -55,8 +52,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
                             <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
                             <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="VehicleType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_VehicleType}" ReadOnly="True" />

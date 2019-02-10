@@ -34,8 +34,6 @@
             <dxlc:DataLayoutItem x:Name="layoutItemMotorNumber" Binding="{Binding Entity.MotorNumber, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemLicensePlate" Binding="{Binding Entity.LicensePlate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemBrand" Binding="{Binding Entity.Brand, Mode=OneTime}">
                 <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.BrandId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpBrands.Entities}" ValueMember="Id" DisplayMember="Description">
                     <dxg:LookUpEdit.PopupContentTemplate>
@@ -88,8 +86,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="HasReplacementRubber" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasHydraulicJack" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasGlassBreaks" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Inspection_Client}" ReadOnly="True" />
                         </dxg:GridControl.Columns>
                         <dxg:GridControl.TotalSummary>
@@ -120,8 +116,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="DayQuantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="Comment" />
                             <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Rent_Client}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="Employee.Name" Header="{x:Static localization:RentCarContextResources.Rent_Employee}" ReadOnly="True" />
                         </dxg:GridControl.Columns>

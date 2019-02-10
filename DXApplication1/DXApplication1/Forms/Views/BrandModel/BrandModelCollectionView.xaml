@@ -45,8 +45,6 @@
             <dxg:GridControl.Columns>
                 <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
                 <dxg:GridColumn IsSmart="True" FieldName="Description" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.BrandModel_Brand}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>

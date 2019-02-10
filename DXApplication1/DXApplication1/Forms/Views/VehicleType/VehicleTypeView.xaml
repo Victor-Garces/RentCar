@@ -31,8 +31,6 @@
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
             <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
                 <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding VehicleTypeVehiclesDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:RentCarContextResources.VehiclePlural}">
                     <dxg:GridControl x:Name="VehicleTypeVehiclesDetailsGrid" dx:DXSerializer.SerializationID="VehicleTypeVehiclesDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
@@ -45,8 +43,6 @@
                             <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
                             <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
                             <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                             <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="BrandModel.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_BrandModel}" ReadOnly="True" />
                             <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />

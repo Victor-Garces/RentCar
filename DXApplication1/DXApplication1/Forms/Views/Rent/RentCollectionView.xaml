@@ -49,8 +49,6 @@
                 <dxg:GridColumn IsSmart="True" FieldName="DayQuantity" />
                 <dxg:GridColumn IsSmart="True" FieldName="Comment" />
                 <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Rent_Client}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="Employee.Name" Header="{x:Static localization:RentCarContextResources.Rent_Employee}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Rent_Vehicle}" ReadOnly="True" />

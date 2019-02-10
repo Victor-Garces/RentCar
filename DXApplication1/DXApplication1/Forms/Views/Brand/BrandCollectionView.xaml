@@ -45,8 +45,6 @@
             <dxg:GridControl.Columns>
                 <dxg:GridColumn IsSmart="True" FieldName="Description" />
                 <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

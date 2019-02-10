@@ -48,8 +48,6 @@
                 <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
                 <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
                 <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="BrandModel.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_BrandModel}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />

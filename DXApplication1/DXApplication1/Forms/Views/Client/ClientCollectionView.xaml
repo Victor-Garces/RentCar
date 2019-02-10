@@ -48,8 +48,6 @@
                 <dxg:GridColumn IsSmart="True" FieldName="CreditCarNumber" />
                 <dxg:GridColumn IsSmart="True" FieldName="CreditLimit" />
                 <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

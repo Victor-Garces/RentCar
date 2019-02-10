@@ -52,8 +52,6 @@
                 <dxg:GridColumn IsSmart="True" FieldName="HasReplacementRubber" />
                 <dxg:GridColumn IsSmart="True" FieldName="HasHydraulicJack" />
                 <dxg:GridColumn IsSmart="True" FieldName="HasGlassBreaks" />
-                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
-                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Inspection_Client}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Inspection_Vehicle}" ReadOnly="True" />
             </dxg:GridControl.Columns>
