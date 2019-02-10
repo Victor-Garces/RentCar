@@ -45,6 +45,7 @@
     <Reference Include="DevExpress.Mvvm.v18.2.ViewModel, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Accordion.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -80,6 +81,9 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Xpf.Themes.Office2016White.v18.2" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -212,6 +216,7 @@
     <Compile Include="DataLayer\Configurations\FuelTypeConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\InspectionConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\RentConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\UserConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\VehicleConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\VehicleTypeConfiguration.cs" />
     <Compile Include="DataLayer\Models\Brand.cs" />
@@ -221,6 +226,7 @@
     <Compile Include="DataLayer\Models\FuelType.cs" />
     <Compile Include="DataLayer\Models\Inspection.cs" />
     <Compile Include="DataLayer\Models\Rent.cs" />
+    <Compile Include="DataLayer\Models\User.cs" />
     <Compile Include="DataLayer\Models\Vehicle.cs" />
     <Compile Include="DataLayer\Models\VehicleType.cs" />
     <Compile Include="DataLayer\RentCarContext.cs" />
@@ -233,6 +239,12 @@
     <Compile Include="Forms\Common\InstantFeedbackCollectionViewModel.cs" />
     <Compile Include="Forms\Common\ReadOnlyCollectionViewModel.cs" />
     <Compile Include="Forms\Common\SingleObjectViewModel.cs" />
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Localization\RentCarContextResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -338,6 +350,10 @@
     <Compile Include="Migrations\201902100251293_UpdateDateTimeToDateTimeOffSet.Designer.cs">
       <DependentUpon>201902100251293_UpdateDateTimeToDateTimeOffSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902100352274_AddedUsers.cs" />
+    <Compile Include="Migrations\201902100352274_AddedUsers.Designer.cs">
+      <DependentUpon>201902100352274_AddedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -352,6 +368,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Localization\RentCarContextResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>RentCarContextResources.Designer.cs</LastGenOutput>
@@ -371,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902100251293_UpdateDateTimeToDateTimeOffSet.resx">
       <DependentUpon>201902100251293_UpdateDateTimeToDateTimeOffSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902100352274_AddedUsers.resx">
+      <DependentUpon>201902100352274_AddedUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

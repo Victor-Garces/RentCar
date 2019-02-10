@@ -1,9 +1,9 @@
-﻿using System;
-using System.Data.Entity;
-using System.Linq;
-using DXApplication1.Contracts;
+﻿using DXApplication1.Contracts;
 using DXApplication1.DataLayer.Configurations;
 using DXApplication1.DataLayer.Models;
+using System;
+using System.Data.Entity;
+using System.Linq;
 
 namespace DXApplication1.DataLayer
 {
@@ -19,6 +19,7 @@ namespace DXApplication1.DataLayer
         public DbSet<Rent> Rents { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<VehicleType> VehicleTypes { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -37,6 +38,7 @@ namespace DXApplication1.DataLayer
             modelBuilder.Configurations.Add(new RentConfiguration());
             modelBuilder.Configurations.Add(new VehicleConfiguration());
             modelBuilder.Configurations.Add(new VehicleTypeConfiguration());
+            modelBuilder.Configurations.Add(new UserConfiguration());
         }
 
         public override int SaveChanges()
