@@ -70,6 +70,15 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string Brand_CreationDate {
+            get {
+                return ResourceManager.GetString("Brand_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         public static string Brand_Description {
@@ -88,11 +97,92 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Is Active.
         /// </summary>
-        public static string Brand_Status {
+        public static string Brand_IsActive {
             get {
-                return ResourceManager.GetString("Brand_Status", resourceCulture);
+                return ResourceManager.GetString("Brand_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Date.
+        /// </summary>
+        public static string Brand_UpdateDate {
+            get {
+                return ResourceManager.GetString("Brand_UpdateDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand Model.
+        /// </summary>
+        public static string BrandModel {
+            get {
+                return ResourceManager.GetString("BrandModel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand.
+        /// </summary>
+        public static string BrandModel_Brand {
+            get {
+                return ResourceManager.GetString("BrandModel_Brand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string BrandModel_CreationDate {
+            get {
+                return ResourceManager.GetString("BrandModel_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string BrandModel_Description {
+            get {
+                return ResourceManager.GetString("BrandModel_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Id.
+        /// </summary>
+        public static string BrandModel_Id {
+            get {
+                return ResourceManager.GetString("BrandModel_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Active.
+        /// </summary>
+        public static string BrandModel_IsActive {
+            get {
+                return ResourceManager.GetString("BrandModel_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Date.
+        /// </summary>
+        public static string BrandModel_UpdateDate {
+            get {
+                return ResourceManager.GetString("BrandModel_UpdateDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand Models.
+        /// </summary>
+        public static string BrandModelPlural {
+            get {
+                return ResourceManager.GetString("BrandModelPlural", resourceCulture);
             }
         }
         
@@ -115,11 +205,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cr Card.
+        ///   Looks up a localized string similar to Creation Date.
         /// </summary>
-        public static string Client_CrCard {
+        public static string Client_CreationDate {
             get {
-                return ResourceManager.GetString("Client_CrCard", resourceCulture);
+                return ResourceManager.GetString("Client_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Credit Car Number.
+        /// </summary>
+        public static string Client_CreditCarNumber {
+            get {
+                return ResourceManager.GetString("Client_CreditCarNumber", resourceCulture);
             }
         }
         
@@ -151,6 +250,15 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Is Active.
+        /// </summary>
+        public static string Client_IsActive {
+            get {
+                return ResourceManager.GetString("Client_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string Client_Name {
@@ -160,20 +268,11 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Person Type.
+        ///   Looks up a localized string similar to Update Date.
         /// </summary>
-        public static string Client_PersonType {
+        public static string Client_UpdateDate {
             get {
-                return ResourceManager.GetString("Client_PersonType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Status.
-        /// </summary>
-        public static string Client_Status {
-            get {
-                return ResourceManager.GetString("Client_Status", resourceCulture);
+                return ResourceManager.GetString("Client_UpdateDate", resourceCulture);
             }
         }
         
@@ -205,6 +304,15 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string Employee_CreationDate {
+            get {
+                return ResourceManager.GetString("Employee_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Id.
         /// </summary>
         public static string Employee_Id {
@@ -219,6 +327,24 @@ namespace DXApplication1.Forms.Localization {
         public static string Employee_Identification {
             get {
                 return ResourceManager.GetString("Employee_Identification", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Identification Type.
+        /// </summary>
+        public static string Employee_IdentificationType {
+            get {
+                return ResourceManager.GetString("Employee_IdentificationType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Active.
+        /// </summary>
+        public static string Employee_IsActive {
+            get {
+                return ResourceManager.GetString("Employee_IsActive", resourceCulture);
             }
         }
         
@@ -241,20 +367,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Update Date.
         /// </summary>
-        public static string Employee_Status {
+        public static string Employee_UpdateDate {
             get {
-                return ResourceManager.GetString("Employee_Status", resourceCulture);
+                return ResourceManager.GetString("Employee_UpdateDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Work Shift.
+        ///   Looks up a localized string similar to Workload.
         /// </summary>
-        public static string Employee_WorkShift {
+        public static string Employee_Workload {
             get {
-                return ResourceManager.GetString("Employee_WorkShift", resourceCulture);
+                return ResourceManager.GetString("Employee_Workload", resourceCulture);
             }
         }
         
@@ -277,6 +403,15 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string FuelType_CreationDate {
+            get {
+                return ResourceManager.GetString("FuelType_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         public static string FuelType_Description {
@@ -295,11 +430,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Is Active.
         /// </summary>
-        public static string FuelType_Status {
+        public static string FuelType_IsActive {
             get {
-                return ResourceManager.GetString("FuelType_Status", resourceCulture);
+                return ResourceManager.GetString("FuelType_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Date.
+        /// </summary>
+        public static string FuelType_UpdateDate {
+            get {
+                return ResourceManager.GetString("FuelType_UpdateDate", resourceCulture);
             }
         }
         
@@ -331,47 +475,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Date.
+        ///   Looks up a localized string similar to Creation Date.
         /// </summary>
-        public static string Inspection_Date {
+        public static string Inspection_CreationDate {
             get {
-                return ResourceManager.GetString("Inspection_Date", resourceCulture);
+                return ResourceManager.GetString("Inspection_CreationDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employee.
+        ///   Looks up a localized string similar to Fuel Quantity.
         /// </summary>
-        public static string Inspection_Employee {
+        public static string Inspection_FuelQuantity {
             get {
-                return ResourceManager.GetString("Inspection_Employee", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fuel Amount.
-        /// </summary>
-        public static string Inspection_FuelAmount {
-            get {
-                return ResourceManager.GetString("Inspection_FuelAmount", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Has ACat.
-        /// </summary>
-        public static string Inspection_HasACat {
-            get {
-                return ResourceManager.GetString("Inspection_HasACat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Has Carvings.
-        /// </summary>
-        public static string Inspection_HasCarvings {
-            get {
-                return ResourceManager.GetString("Inspection_HasCarvings", resourceCulture);
+                return ResourceManager.GetString("Inspection_FuelQuantity", resourceCulture);
             }
         }
         
@@ -385,11 +502,29 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Has Spare Rubber.
+        ///   Looks up a localized string similar to Has Grazes.
         /// </summary>
-        public static string Inspection_HasSpareRubber {
+        public static string Inspection_HasGrazes {
             get {
-                return ResourceManager.GetString("Inspection_HasSpareRubber", resourceCulture);
+                return ResourceManager.GetString("Inspection_HasGrazes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Has Hydraulic Jack.
+        /// </summary>
+        public static string Inspection_HasHydraulicJack {
+            get {
+                return ResourceManager.GetString("Inspection_HasHydraulicJack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Has Replacement Rubber.
+        /// </summary>
+        public static string Inspection_HasReplacementRubber {
+            get {
+                return ResourceManager.GetString("Inspection_HasReplacementRubber", resourceCulture);
             }
         }
         
@@ -403,47 +538,47 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to State First Rubber.
+        ///   Looks up a localized string similar to Rubber Four.
         /// </summary>
-        public static string Inspection_StateFirstRubber {
+        public static string Inspection_RubberFour {
             get {
-                return ResourceManager.GetString("Inspection_StateFirstRubber", resourceCulture);
+                return ResourceManager.GetString("Inspection_RubberFour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to State Fourth Rubber.
+        ///   Looks up a localized string similar to Rubber One.
         /// </summary>
-        public static string Inspection_StateFourthRubber {
+        public static string Inspection_RubberOne {
             get {
-                return ResourceManager.GetString("Inspection_StateFourthRubber", resourceCulture);
+                return ResourceManager.GetString("Inspection_RubberOne", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to State Second Rubber.
+        ///   Looks up a localized string similar to Rubber Three.
         /// </summary>
-        public static string Inspection_StateSecondRubber {
+        public static string Inspection_RubberThree {
             get {
-                return ResourceManager.GetString("Inspection_StateSecondRubber", resourceCulture);
+                return ResourceManager.GetString("Inspection_RubberThree", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to State Third Rubber.
+        ///   Looks up a localized string similar to Rubber Two.
         /// </summary>
-        public static string Inspection_StateThirdRubber {
+        public static string Inspection_RubberTwo {
             get {
-                return ResourceManager.GetString("Inspection_StateThirdRubber", resourceCulture);
+                return ResourceManager.GetString("Inspection_RubberTwo", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Update Date.
         /// </summary>
-        public static string Inspection_Status {
+        public static string Inspection_UpdateDate {
             get {
-                return ResourceManager.GetString("Inspection_Status", resourceCulture);
+                return ResourceManager.GetString("Inspection_UpdateDate", resourceCulture);
             }
         }
         
@@ -462,60 +597,6 @@ namespace DXApplication1.Forms.Localization {
         public static string InspectionPlural {
             get {
                 return ResourceManager.GetString("InspectionPlural", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Model.
-        /// </summary>
-        public static string Model {
-            get {
-                return ResourceManager.GetString("Model", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Brand.
-        /// </summary>
-        public static string Model_Brand {
-            get {
-                return ResourceManager.GetString("Model_Brand", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Description.
-        /// </summary>
-        public static string Model_Description {
-            get {
-                return ResourceManager.GetString("Model_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Id.
-        /// </summary>
-        public static string Model_Id {
-            get {
-                return ResourceManager.GetString("Model_Id", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Status.
-        /// </summary>
-        public static string Model_Status {
-            get {
-                return ResourceManager.GetString("Model_Status", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Models.
-        /// </summary>
-        public static string ModelPlural {
-            get {
-                return ResourceManager.GetString("ModelPlural", resourceCulture);
             }
         }
         
@@ -556,11 +637,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Days Quantity.
+        ///   Looks up a localized string similar to Creation Date.
         /// </summary>
-        public static string Rent_DaysQuantity {
+        public static string Rent_CreationDate {
             get {
-                return ResourceManager.GetString("Rent_DaysQuantity", resourceCulture);
+                return ResourceManager.GetString("Rent_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day Quantity.
+        /// </summary>
+        public static string Rent_DayQuantity {
+            get {
+                return ResourceManager.GetString("Rent_DayQuantity", resourceCulture);
             }
         }
         
@@ -583,29 +673,38 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rent Date Time.
+        ///   Looks up a localized string similar to Is Active.
         /// </summary>
-        public static string Rent_RentDateTime {
+        public static string Rent_IsActive {
             get {
-                return ResourceManager.GetString("Rent_RentDateTime", resourceCulture);
+                return ResourceManager.GetString("Rent_IsActive", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Return Date Time.
+        ///   Looks up a localized string similar to Rent Date.
         /// </summary>
-        public static string Rent_ReturnDateTime {
+        public static string Rent_RentDate {
             get {
-                return ResourceManager.GetString("Rent_ReturnDateTime", resourceCulture);
+                return ResourceManager.GetString("Rent_RentDate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Return Date.
         /// </summary>
-        public static string Rent_Status {
+        public static string Rent_ReturnDate {
             get {
-                return ResourceManager.GetString("Rent_Status", resourceCulture);
+                return ResourceManager.GetString("Rent_ReturnDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Date.
+        /// </summary>
+        public static string Rent_UpdateDate {
+            get {
+                return ResourceManager.GetString("Rent_UpdateDate", resourceCulture);
             }
         }
         
@@ -646,11 +745,29 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Brand Model.
+        /// </summary>
+        public static string Vehicle_BrandModel {
+            get {
+                return ResourceManager.GetString("Vehicle_BrandModel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chassis Number.
         /// </summary>
         public static string Vehicle_ChassisNumber {
             get {
                 return ResourceManager.GetString("Vehicle_ChassisNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string Vehicle_CreationDate {
+            get {
+                return ResourceManager.GetString("Vehicle_CreationDate", resourceCulture);
             }
         }
         
@@ -682,11 +799,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Model.
+        ///   Looks up a localized string similar to Is Active.
         /// </summary>
-        public static string Vehicle_Model {
+        public static string Vehicle_IsActive {
             get {
-                return ResourceManager.GetString("Vehicle_Model", resourceCulture);
+                return ResourceManager.GetString("Vehicle_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to License Plate.
+        /// </summary>
+        public static string Vehicle_LicensePlate {
+            get {
+                return ResourceManager.GetString("Vehicle_LicensePlate", resourceCulture);
             }
         }
         
@@ -700,20 +826,11 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Plate Number.
+        ///   Looks up a localized string similar to Update Date.
         /// </summary>
-        public static string Vehicle_PlateNumber {
+        public static string Vehicle_UpdateDate {
             get {
-                return ResourceManager.GetString("Vehicle_PlateNumber", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Status.
-        /// </summary>
-        public static string Vehicle_Status {
-            get {
-                return ResourceManager.GetString("Vehicle_Status", resourceCulture);
+                return ResourceManager.GetString("Vehicle_UpdateDate", resourceCulture);
             }
         }
         
@@ -745,6 +862,15 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Creation Date.
+        /// </summary>
+        public static string VehicleType_CreationDate {
+            get {
+                return ResourceManager.GetString("VehicleType_CreationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Description.
         /// </summary>
         public static string VehicleType_Description {
@@ -763,11 +889,20 @@ namespace DXApplication1.Forms.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status.
+        ///   Looks up a localized string similar to Is Active.
         /// </summary>
-        public static string VehicleType_Status {
+        public static string VehicleType_IsActive {
             get {
-                return ResourceManager.GetString("VehicleType_Status", resourceCulture);
+                return ResourceManager.GetString("VehicleType_IsActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Date.
+        /// </summary>
+        public static string VehicleType_UpdateDate {
+            get {
+                return ResourceManager.GetString("VehicleType_UpdateDate", resourceCulture);
             }
         }
         

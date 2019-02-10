@@ -31,7 +31,45 @@
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
             <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemStatus" Binding="{Binding Entity.Status, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
+                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding VehicleTypeVehiclesDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:RentCarContextResources.VehiclePlural}">
+                    <dxg:GridControl x:Name="VehicleTypeVehiclesDetailsGrid" dx:DXSerializer.SerializationID="VehicleTypeVehiclesDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
+                        <dxg:GridControl.View>
+                            <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
+                        </dxg:GridControl.View>
+                        <dxg:GridControl.Columns>
+                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
+                            <dxg:GridColumn IsSmart="True" FieldName="Description" />
+                            <dxg:GridColumn IsSmart="True" FieldName="ChassisNumber" />
+                            <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
+                            <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
+                            <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
+                            <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
+                            <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
+                            <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="BrandModel.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_BrandModel}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />
+                        </dxg:GridControl.Columns>
+                        <dxg:GridControl.TotalSummary>
+                            <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
+                        </dxg:GridControl.TotalSummary>
+                        <dxg:GridControl.GroupSummary>
+                            <dxg:GridSummaryItem SummaryType="Count" />
+                        </dxg:GridControl.GroupSummary>
+                    </dxg:GridControl>
+                    <dxlc:LayoutGroup Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" MinWidth="100">
+                        <Button Style="{StaticResource EntityView.Detail.Command.New}" />
+                        <Button Style="{StaticResource EntityView.Detail.Command.Edit}" />
+                        <Button Style="{StaticResource EntityView.Detail.Command.Delete}" />
+                        <Button Style="{StaticResource EntityView.Detail.Command.Refresh}" />
+                        <Button Style="{StaticResource EntityView.Detail.Command.Save}" />
+                        <Button Style="{StaticResource EntityView.Detail.Command.Reset}" />
+                    </dxlc:LayoutGroup>
+                </dxlc:LayoutGroup>
+            </dxlc:LayoutGroup>
         </dxlc:LayoutControl>
     </DockPanel>
 </UserControl>

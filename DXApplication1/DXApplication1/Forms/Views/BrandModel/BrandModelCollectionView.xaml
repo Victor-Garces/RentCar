@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="DXApplication1.Forms.Views.ModelCollectionView"
+﻿<UserControl x:Class="DXApplication1.Forms.Views.BrandModelCollectionView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
@@ -16,7 +16,7 @@
         xmlns:localization="clr-namespace:DXApplication1.Forms.Localization"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="600" DataContext="{dxmvvm:ViewModelSource viewModel:ModelCollectionViewModel}">
+        mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="600" DataContext="{dxmvvm:ViewModelSource viewModel:BrandModelCollectionViewModel}">
     <UserControl.Resources>
         <ResourceDictionary Source="../../Resources/CollectionViewResources.xaml" />
     </UserControl.Resources>
@@ -30,7 +30,7 @@
             <dxwui:AppBarButton Style="{StaticResource CollectionView.Command.Refresh}" />
             <dxwui:AppBarButton Style="{StaticResource CollectionView.Command.Reports}">
                 <dxmvvm:Interaction.Behaviors>
-                    <dxrudex:ReportManagerBehavior Service="{Binding ElementName=ModelCollectionViewReportService}" ImageType="GrayScaled" />
+                    <dxrudex:ReportManagerBehavior Service="{Binding ElementName=BrandModelCollectionViewReportService}" ImageType="GrayScaled" />
                 </dxmvvm:Interaction.Behaviors>
             </dxwui:AppBarButton>
         </dxwui:AppBar>
@@ -38,15 +38,17 @@
             <dxg:GridControl.View>
                 <dxg:TableView Style="{StaticResource CollectionView.TableView}">
                     <dxmvvm:Interaction.Behaviors>
-                        <dxrudex:GridReportManagerService x:Name="ModelCollectionViewReportService" />
+                        <dxrudex:GridReportManagerService x:Name="BrandModelCollectionViewReportService" />
                     </dxmvvm:Interaction.Behaviors>
                 </dxg:TableView>
             </dxg:GridControl.View>
             <dxg:GridControl.Columns>
                 <dxg:GridColumn IsSmart="True" FieldName="Id" />
+                <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
                 <dxg:GridColumn IsSmart="True" FieldName="Description" />
-                <dxg:GridColumn IsSmart="True" FieldName="Status" />
-                <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Model_Brand}" ReadOnly="True" />
+                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
+                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
+                <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.BrandModel_Brand}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

@@ -44,19 +44,18 @@
             </dxg:GridControl.View>
             <dxg:GridControl.Columns>
                 <dxg:GridColumn IsSmart="True" FieldName="Id" />
-                <dxg:GridColumn IsSmart="True" FieldName="HasCarvings" />
-                <dxg:GridColumn IsSmart="True" FieldName="FuelAmount" />
-                <dxg:GridColumn IsSmart="True" FieldName="HasSpareRubber" />
-                <dxg:GridColumn IsSmart="True" FieldName="HasACat" />
+                <dxg:GridColumn IsSmart="True" FieldName="HasGrazes" />
+                <dxg:GridColumn IsSmart="True" FieldName="FuelQuantity" />
+                <dxg:GridColumn IsSmart="True" FieldName="RubberOne" />
+                <dxg:GridColumn IsSmart="True" FieldName="RubberTwo" />
+                <dxg:GridColumn IsSmart="True" FieldName="RubberThree" />
+                <dxg:GridColumn IsSmart="True" FieldName="RubberFour" />
+                <dxg:GridColumn IsSmart="True" FieldName="HasReplacementRubber" />
+                <dxg:GridColumn IsSmart="True" FieldName="HasHydraulicJack" />
                 <dxg:GridColumn IsSmart="True" FieldName="HasGlassBreaks" />
-                <dxg:GridColumn IsSmart="True" FieldName="StateFirstRubber" />
-                <dxg:GridColumn IsSmart="True" FieldName="StateSecondRubber" />
-                <dxg:GridColumn IsSmart="True" FieldName="StateThirdRubber" />
-                <dxg:GridColumn IsSmart="True" FieldName="StateFourthRubber" />
-                <dxg:GridColumn IsSmart="True" FieldName="Date" />
-                <dxg:GridColumn IsSmart="True" FieldName="Status" />
+                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
+                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Inspection_Client}" ReadOnly="True" />
-                <dxg:GridColumn FieldName="Employee.Name" Header="{x:Static localization:RentCarContextResources.Inspection_Employee}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Inspection_Vehicle}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>

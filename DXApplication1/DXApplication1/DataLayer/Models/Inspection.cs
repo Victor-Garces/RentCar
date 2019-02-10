@@ -1,29 +1,40 @@
-﻿using RentCar.Enums;
+﻿using Core.Contracts;
+using Core.Enums;
 using System;
 
-namespace RentCar.DataLayer.Models
+namespace Core.Models
 {
-    public sealed class Inspection
+    public  class Inspection: IEntity
     {
         public int Id { get; set; }
-        public int ClientId { get; set; }
-        public Client Client { get; set; }
 
         public int VehicleId { get; set; }
-        public Vehicle Vehicle { get; set; }
-        public bool HasCarvings { get; set; }
-        public FuelAmount FuelAmount { get; set; }
-        public bool HasSpareRubber { get; set; }
-        public bool HasACat { get; set; }
-        public bool HasGlassBreaks { get; set; }
-        public bool StateFirstRubber { get; set; }
-        public bool StateSecondRubber { get; set; }
-        public bool StateThirdRubber { get; set; }
-        public bool StateFourthRubber { get; set; }
-        public DateTime Date { get; set; }
-        public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
-        public bool Status { get; set; }
 
+        public Vehicle Vehicle { get; set; }
+
+        public int ClientId { get; set; }
+
+        public Client Client { get; set; }
+
+        public bool HasGrazes { get; set; }
+
+        public FuelQuantity FuelQuantity { get; set; }
+
+        public bool RubberOne { get; set; }
+
+        public bool RubberTwo { get; set; }
+
+        public bool RubberThree { get; set; }
+
+        public bool RubberFour { get; set; }
+
+        public bool HasReplacementRubber { get; set; }
+
+        public bool HasHydraulicJack { get; set; }
+
+        public bool HasGlassBreaks { get; set; }
+
+        public DateTime CreationDate { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }

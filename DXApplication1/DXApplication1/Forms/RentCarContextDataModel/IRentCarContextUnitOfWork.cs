@@ -1,6 +1,6 @@
-﻿using DevExpress.Mvvm.DataModel;
+﻿using Core.Models;
+using DevExpress.Mvvm.DataModel;
 using RentCar.DataLayer;
-using RentCar.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,14 +18,14 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
 		IRepository<Brand, int> Brands { get; }
         
         /// <summary>
-        /// The Client entities repository.
+        /// The BrandModel entities repository.
         /// </summary>
-		IRepository<Client, int> Clients { get; }
+		IRepository<BrandModel, int> BrandModels { get; }
         
         /// <summary>
-        /// The Employee entities repository.
+        /// The Vehicle entities repository.
         /// </summary>
-		IRepository<Employee, int> Employees { get; }
+		IRepository<Vehicle, int> Vehicles { get; }
         
         /// <summary>
         /// The FuelType entities repository.
@@ -38,23 +38,23 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
 		IRepository<Inspection, int> Inspections { get; }
         
         /// <summary>
-        /// The Vehicle entities repository.
+        /// The Client entities repository.
         /// </summary>
-		IRepository<Vehicle, int> Vehicles { get; }
-        
-        /// <summary>
-        /// The Model entities repository.
-        /// </summary>
-		IRepository<Model, int> Models { get; }
-        
-        /// <summary>
-        /// The VehicleType entities repository.
-        /// </summary>
-		IRepository<VehicleType, int> VehicleTypes { get; }
+		IRepository<Client, int> Clients { get; }
         
         /// <summary>
         /// The Rent entities repository.
         /// </summary>
 		IRepository<Rent, int> Rents { get; }
+        
+        /// <summary>
+        /// The Employee entities repository.
+        /// </summary>
+		IRepository<Employee, int> Employees { get; }
+        
+        /// <summary>
+        /// The VehicleType entities repository.
+        /// </summary>
+		IRepository<VehicleType, int> VehicleTypes { get; }
     }
 }

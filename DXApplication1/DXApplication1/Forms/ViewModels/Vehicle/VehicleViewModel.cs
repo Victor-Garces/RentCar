@@ -9,7 +9,7 @@ using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
 using DXApplication1.Forms.RentCarContextDataModel;
 using DXApplication1.Forms.Common;
-using RentCar.DataLayer.Models;
+using Core.Models;
 
 namespace DXApplication1.Forms.ViewModels {
 
@@ -47,6 +47,16 @@ namespace DXApplication1.Forms.ViewModels {
             }
         }
         /// <summary>
+        /// The view model that contains a look-up collection of BrandModels for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<BrandModel> LookUpBrandModels {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (VehicleViewModel x) => x.LookUpBrandModels,
+                    getRepositoryFunc: x => x.BrandModels);
+            }
+        }
+        /// <summary>
         /// The view model that contains a look-up collection of FuelTypes for the corresponding navigation property in the view.
         /// </summary>
         public IEntitiesViewModel<FuelType> LookUpFuelTypes {
@@ -54,16 +64,6 @@ namespace DXApplication1.Forms.ViewModels {
                 return GetLookUpEntitiesViewModel(
                     propertyExpression: (VehicleViewModel x) => x.LookUpFuelTypes,
                     getRepositoryFunc: x => x.FuelTypes);
-            }
-        }
-        /// <summary>
-        /// The view model that contains a look-up collection of Models for the corresponding navigation property in the view.
-        /// </summary>
-        public IEntitiesViewModel<Model> LookUpModels {
-            get {
-                return GetLookUpEntitiesViewModel(
-                    propertyExpression: (VehicleViewModel x) => x.LookUpModels,
-                    getRepositoryFunc: x => x.Models);
             }
         }
         /// <summary>
@@ -76,6 +76,52 @@ namespace DXApplication1.Forms.ViewModels {
                     getRepositoryFunc: x => x.VehicleTypes);
             }
         }
+        /// <summary>
+        /// The view model that contains a look-up collection of Inspections for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<Inspection> LookUpInspections {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (VehicleViewModel x) => x.LookUpInspections,
+                    getRepositoryFunc: x => x.Inspections);
+            }
+        }
+        /// <summary>
+        /// The view model that contains a look-up collection of Rents for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<Rent> LookUpRents {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (VehicleViewModel x) => x.LookUpRents,
+                    getRepositoryFunc: x => x.Rents);
+            }
+        }
 
+
+        /// <summary>
+        /// The view model for the VehicleInspections detail collection.
+        /// </summary>
+        public CollectionViewModelBase<Inspection, Inspection, int, IRentCarContextUnitOfWork> VehicleInspectionsDetails {
+            get {
+                return GetDetailsCollectionViewModel(
+                    propertyExpression: (VehicleViewModel x) => x.VehicleInspectionsDetails,
+                    getRepositoryFunc: x => x.Inspections,
+                    foreignKeyExpression: x => x.VehicleId,
+                    navigationExpression: x => x.Vehicle);
+            }
+        }
+
+        /// <summary>
+        /// The view model for the VehicleRents detail collection.
+        /// </summary>
+        public CollectionViewModelBase<Rent, Rent, int, IRentCarContextUnitOfWork> VehicleRentsDetails {
+            get {
+                return GetDetailsCollectionViewModel(
+                    propertyExpression: (VehicleViewModel x) => x.VehicleRentsDetails,
+                    getRepositoryFunc: x => x.Rents,
+                    foreignKeyExpression: x => x.VehicleId,
+                    navigationExpression: x => x.Vehicle);
+            }
+        }
     }
 }

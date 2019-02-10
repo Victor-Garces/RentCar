@@ -1,7 +1,7 @@
-﻿using DevExpress.Mvvm.DataModel;
+﻿using Core.Models;
+using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.DataModel.DesignTime;
 using RentCar.DataLayer;
-using RentCar.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +23,12 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
             get { return GetRepository((Brand x) => x.Id); }
         }
 
-        IRepository<Client, int> IRentCarContextUnitOfWork.Clients {
-            get { return GetRepository((Client x) => x.Id); }
+        IRepository<BrandModel, int> IRentCarContextUnitOfWork.BrandModels {
+            get { return GetRepository((BrandModel x) => x.Id); }
         }
 
-        IRepository<Employee, int> IRentCarContextUnitOfWork.Employees {
-            get { return GetRepository((Employee x) => x.Id); }
+        IRepository<Vehicle, int> IRentCarContextUnitOfWork.Vehicles {
+            get { return GetRepository((Vehicle x) => x.Id); }
         }
 
         IRepository<FuelType, int> IRentCarContextUnitOfWork.FuelTypes {
@@ -39,20 +39,20 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
             get { return GetRepository((Inspection x) => x.Id); }
         }
 
-        IRepository<Vehicle, int> IRentCarContextUnitOfWork.Vehicles {
-            get { return GetRepository((Vehicle x) => x.Id); }
-        }
-
-        IRepository<Model, int> IRentCarContextUnitOfWork.Models {
-            get { return GetRepository((Model x) => x.Id); }
-        }
-
-        IRepository<VehicleType, int> IRentCarContextUnitOfWork.VehicleTypes {
-            get { return GetRepository((VehicleType x) => x.Id); }
+        IRepository<Client, int> IRentCarContextUnitOfWork.Clients {
+            get { return GetRepository((Client x) => x.Id); }
         }
 
         IRepository<Rent, int> IRentCarContextUnitOfWork.Rents {
             get { return GetRepository((Rent x) => x.Id); }
+        }
+
+        IRepository<Employee, int> IRentCarContextUnitOfWork.Employees {
+            get { return GetRepository((Employee x) => x.Id); }
+        }
+
+        IRepository<VehicleType, int> IRentCarContextUnitOfWork.VehicleTypes {
+            get { return GetRepository((VehicleType x) => x.Id); }
         }
     }
 }

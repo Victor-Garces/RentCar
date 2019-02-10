@@ -1,8 +1,8 @@
-﻿namespace RentCar.Enums
+﻿namespace Core.Enums
 {
     public enum PersonType
     {
         Physical = 1,
-        Legal = 2
+        Juridical
     }
 }

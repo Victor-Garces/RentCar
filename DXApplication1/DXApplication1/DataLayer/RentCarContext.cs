@@ -1,5 +1,5 @@
-﻿using RentCar.DataLayer.Configurations;
-using RentCar.DataLayer.Models;
+﻿using Core.Models;
+using Persistence.EntitiesConfigurations;
 using System.Data.Entity;
 
 namespace RentCar.DataLayer
@@ -13,7 +13,6 @@ namespace RentCar.DataLayer
         public DbSet<Employee> Employees { get; set; }
         public DbSet<FuelType> FuelTypes { get; set; }
         public DbSet<Inspection> Inspections { get; set; }
-        public DbSet<Model> Models { get; set; }
         public DbSet<Rent> Rents { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<VehicleType> VehicleTypes { get; set; }
@@ -32,7 +31,6 @@ namespace RentCar.DataLayer
             modelBuilder.Configurations.Add(new EmployeeConfiguration());
             modelBuilder.Configurations.Add(new FuelTypeConfiguration());
             modelBuilder.Configurations.Add(new InspectionConfiguration());
-            modelBuilder.Configurations.Add(new ModelConfiguration());
             modelBuilder.Configurations.Add(new RentConfiguration());
             modelBuilder.Configurations.Add(new VehicleConfiguration());
             modelBuilder.Configurations.Add(new VehicleTypeConfiguration());

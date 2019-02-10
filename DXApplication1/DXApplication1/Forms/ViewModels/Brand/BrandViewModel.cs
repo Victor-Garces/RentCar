@@ -9,7 +9,7 @@ using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
 using DXApplication1.Forms.RentCarContextDataModel;
 using DXApplication1.Forms.Common;
-using RentCar.DataLayer.Models;
+using Core.Models;
 
 namespace DXApplication1.Forms.ViewModels {
 
@@ -36,6 +36,52 @@ namespace DXApplication1.Forms.ViewModels {
                 }
 
 
+        /// <summary>
+        /// The view model that contains a look-up collection of BrandModels for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<BrandModel> LookUpBrandModels {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (BrandViewModel x) => x.LookUpBrandModels,
+                    getRepositoryFunc: x => x.BrandModels);
+            }
+        }
+        /// <summary>
+        /// The view model that contains a look-up collection of Vehicles for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<Vehicle> LookUpVehicles {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (BrandViewModel x) => x.LookUpVehicles,
+                    getRepositoryFunc: x => x.Vehicles);
+            }
+        }
 
+
+        /// <summary>
+        /// The view model for the BrandBrandModels detail collection.
+        /// </summary>
+        public CollectionViewModelBase<BrandModel, BrandModel, int, IRentCarContextUnitOfWork> BrandBrandModelsDetails {
+            get {
+                return GetDetailsCollectionViewModel(
+                    propertyExpression: (BrandViewModel x) => x.BrandBrandModelsDetails,
+                    getRepositoryFunc: x => x.BrandModels,
+                    foreignKeyExpression: x => x.BrandId,
+                    navigationExpression: x => x.Brand);
+            }
+        }
+
+        /// <summary>
+        /// The view model for the BrandVehicles detail collection.
+        /// </summary>
+        public CollectionViewModelBase<Vehicle, Vehicle, int, IRentCarContextUnitOfWork> BrandVehiclesDetails {
+            get {
+                return GetDetailsCollectionViewModel(
+                    propertyExpression: (BrandViewModel x) => x.BrandVehiclesDetails,
+                    getRepositoryFunc: x => x.Vehicles,
+                    foreignKeyExpression: x => x.BrandId,
+                    navigationExpression: x => x.Brand);
+            }
+        }
     }
 }

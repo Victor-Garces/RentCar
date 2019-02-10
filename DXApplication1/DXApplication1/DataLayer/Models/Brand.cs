@@ -1,11 +1,18 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 
-namespace RentCar.DataLayer.Models
+namespace Core.Models
 {
-    public sealed class Brand
+    public class Brand
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public bool Status { get; set; }
+        public bool IsActive { get; set; }
+
+        public ISet<Vehicle> Vehicles { get; set; }
+
+        public ISet<BrandModel> BrandModels { get; set; }
+        public DateTime CreationDate { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }

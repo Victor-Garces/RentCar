@@ -1,8 +1,8 @@
 ﻿using System.Windows.Controls;
 
 namespace DXApplication1.Forms.Views{
-    public partial class ModelView : UserControl {
-        public ModelView() {
+    public partial class BrandModelView : UserControl {
+        public BrandModelView() {
             InitializeComponent();
         }
     }

@@ -9,7 +9,7 @@ using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
 using DXApplication1.Forms.RentCarContextDataModel;
 using DXApplication1.Forms.Common;
-using RentCar.DataLayer.Models;
+using Core.Models;
 
 namespace DXApplication1.Forms.ViewModels {
 
@@ -36,6 +36,29 @@ namespace DXApplication1.Forms.ViewModels {
                 }
 
 
+        /// <summary>
+        /// The view model that contains a look-up collection of Rents for the corresponding navigation property in the view.
+        /// </summary>
+        public IEntitiesViewModel<Rent> LookUpRents {
+            get {
+                return GetLookUpEntitiesViewModel(
+                    propertyExpression: (EmployeeViewModel x) => x.LookUpRents,
+                    getRepositoryFunc: x => x.Rents);
+            }
+        }
 
+
+        /// <summary>
+        /// The view model for the EmployeeRents detail collection.
+        /// </summary>
+        public CollectionViewModelBase<Rent, Rent, int, IRentCarContextUnitOfWork> EmployeeRentsDetails {
+            get {
+                return GetDetailsCollectionViewModel(
+                    propertyExpression: (EmployeeViewModel x) => x.EmployeeRentsDetails,
+                    getRepositoryFunc: x => x.Rents,
+                    foreignKeyExpression: x => x.EmployeeId,
+                    navigationExpression: x => x.Employee);
+            }
+        }
     }
 }

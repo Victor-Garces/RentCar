@@ -119,6 +119,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Forms\Views\BrandModel\BrandModelCollectionView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Forms\Views\BrandModel\BrandModelView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Forms\Views\Brand\BrandCollectionView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -159,14 +167,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Forms\Views\Model\ModelCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Model\ModelView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Forms\Views\RentCarContextView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -203,27 +203,31 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Contracts\IAudit.cs" />
+    <Compile Include="Contracts\IEntity.cs" />
     <Compile Include="DataLayer\Configurations\BrandConfiguration.cs" />
+    <Compile Include="DataLayer\Configurations\BrandModelConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\ClientConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\EmployeeConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\FuelTypeConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\InspectionConfiguration.cs" />
-    <Compile Include="DataLayer\Configurations\ModelConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\RentConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\VehicleConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\VehicleTypeConfiguration.cs" />
     <Compile Include="DataLayer\Models\Brand.cs" />
+    <Compile Include="DataLayer\Models\BrandModel.cs" />
     <Compile Include="DataLayer\Models\Client.cs" />
     <Compile Include="DataLayer\Models\Employee.cs" />
     <Compile Include="DataLayer\Models\FuelType.cs" />
     <Compile Include="DataLayer\Models\Inspection.cs" />
-    <Compile Include="DataLayer\Models\Model.cs" />
     <Compile Include="DataLayer\Models\Rent.cs" />
     <Compile Include="DataLayer\Models\Vehicle.cs" />
     <Compile Include="DataLayer\Models\VehicleType.cs" />
     <Compile Include="DataLayer\RentCarContext.cs" />
-    <Compile Include="Enums\FuelAmount.cs" />
+    <Compile Include="Enums\FuelQuantity.cs" />
+    <Compile Include="Enums\IdentificationType.cs" />
     <Compile Include="Enums\PersonType.cs" />
+    <Compile Include="Enums\Workload.cs" />
     <Compile Include="Forms\Common\CollectionViewModel.cs" />
     <Compile Include="Forms\Common\EntitiesViewModel.cs" />
     <Compile Include="Forms\Common\InstantFeedbackCollectionViewModel.cs" />
@@ -244,6 +248,8 @@
     <Compile Include="Forms\RentCarContextDataModel\RentCarContextMetadata.cs" />
     <Compile Include="Forms\RentCarContextDataModel\RentCarContextUnitOfWork.cs" />
     <Compile Include="Forms\RentCarContextDataModel\UnitOfWorkSource.cs" />
+    <Compile Include="Forms\ViewModels\BrandModel\BrandModelCollectionViewModel.cs" />
+    <Compile Include="Forms\ViewModels\BrandModel\BrandModelViewModel.cs" />
     <Compile Include="Forms\ViewModels\Brand\BrandCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Brand\BrandViewModel.cs" />
     <Compile Include="Forms\ViewModels\Client\ClientCollectionViewModel.cs" />
@@ -254,8 +260,6 @@
     <Compile Include="Forms\ViewModels\FuelType\FuelTypeViewModel.cs" />
     <Compile Include="Forms\ViewModels\Inspection\InspectionCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Inspection\InspectionViewModel.cs" />
-    <Compile Include="Forms\ViewModels\Model\ModelCollectionViewModel.cs" />
-    <Compile Include="Forms\ViewModels\Model\ModelViewModel.cs" />
     <Compile Include="Forms\ViewModels\RentCarContextViewModel.cs" />
     <Compile Include="Forms\ViewModels\Rent\RentCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Rent\RentViewModel.cs" />
@@ -263,6 +267,12 @@
     <Compile Include="Forms\ViewModels\VehicleType\VehicleTypeViewModel.cs" />
     <Compile Include="Forms\ViewModels\Vehicle\VehicleCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Vehicle\VehicleViewModel.cs" />
+    <Compile Include="Forms\Views\BrandModel\BrandModelCollectionView.xaml.cs">
+      <DependentUpon>BrandModelCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Views\BrandModel\BrandModelView.xaml.cs">
+      <DependentUpon>BrandModelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Views\Brand\BrandCollectionView.xaml.cs">
       <DependentUpon>BrandCollectionView.xaml</DependentUpon>
     </Compile>
@@ -293,12 +303,6 @@
     <Compile Include="Forms\Views\Inspection\InspectionView.xaml.cs">
       <DependentUpon>InspectionView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Model\ModelCollectionView.xaml.cs">
-      <DependentUpon>ModelCollectionView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Views\Model\ModelView.xaml.cs">
-      <DependentUpon>ModelView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Views\RentCarContextView.xaml.cs">
       <DependentUpon>RentCarContextView.xaml</DependentUpon>
     </Compile>
@@ -326,9 +330,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201902091814160_AddedTables.cs" />
-    <Compile Include="Migrations\201902091814160_AddedTables.Designer.cs">
-      <DependentUpon>201902091814160_AddedTables.cs</DependentUpon>
+    <Compile Include="Migrations\201902100129153_AddedTable.cs" />
+    <Compile Include="Migrations\201902100129153_AddedTable.Designer.cs">
+      <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -358,8 +362,8 @@
       <CustomToolNamespace>DXApplication1.Forms.Localization</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Localization\ViewResources.ru-RU.resx" />
-    <EmbeddedResource Include="Migrations\201902091814160_AddedTables.resx">
-      <DependentUpon>201902091814160_AddedTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902100129153_AddedTable.resx">
+      <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

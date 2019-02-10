@@ -47,11 +47,13 @@
                 <dxg:GridColumn IsSmart="True" FieldName="Description" />
                 <dxg:GridColumn IsSmart="True" FieldName="ChassisNumber" />
                 <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
-                <dxg:GridColumn IsSmart="True" FieldName="PlateNumber" />
-                <dxg:GridColumn IsSmart="True" FieldName="Status" />
+                <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
+                <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
+                <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
+                <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
                 <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
+                <dxg:GridColumn FieldName="BrandModel.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_BrandModel}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />
-                <dxg:GridColumn FieldName="Model.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Model}" ReadOnly="True" />
                 <dxg:GridColumn FieldName="VehicleType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_VehicleType}" ReadOnly="True" />
             </dxg:GridControl.Columns>
             <dxg:GridControl.TotalSummary>

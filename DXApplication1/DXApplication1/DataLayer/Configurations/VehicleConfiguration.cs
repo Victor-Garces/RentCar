@@ -1,20 +1,17 @@
-﻿using RentCar.DataLayer.Models;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
+using Core.Models;
 
-namespace RentCar.DataLayer.Configurations
+namespace Persistence.EntitiesConfigurations
 {
-    internal class VehicleConfiguration : EntityTypeConfiguration<Vehicle>
+    internal sealed class VehicleConfiguration: EntityTypeConfiguration<Vehicle>
     {
-        internal VehicleConfiguration()
+        public VehicleConfiguration()
         {
-            HasKey(caseFile => caseFile.Id);
-            Property(caseFile => caseFile.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(caseFile => caseFile.ChassisNumber).IsRequired();
-            Property(caseFile => caseFile.Description).IsRequired();
-            Property(caseFile => caseFile.MotorNumber).IsRequired();
-            Property(caseFile => caseFile.PlateNumber).IsRequired();
-            Property(caseFile => caseFile.Status).IsRequired();
+            HasKey(vehicle => vehicle.Id);
+            Property(vehicle => vehicle.BrandId).IsRequired();
+            Property(vehicle => vehicle.BrandModelId).IsRequired();
+            Property(vehicle => vehicle.FuelTypeId).IsRequired();
+            Property(vehicle => vehicle.VehicleTypeId).IsRequired();
         }
     }
 }

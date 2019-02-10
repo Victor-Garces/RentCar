@@ -40,14 +40,14 @@ namespace DXApplication1.Forms.ViewModels {
         protected override RentCarContextModuleDescription[] CreateModules() {
 			return new RentCarContextModuleDescription[] {
                 new RentCarContextModuleDescription(RentCarContextResources.BrandPlural, "BrandCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Brands)),
-                new RentCarContextModuleDescription(RentCarContextResources.ClientPlural, "ClientCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Clients)),
-                new RentCarContextModuleDescription(RentCarContextResources.EmployeePlural, "EmployeeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Employees)),
+                new RentCarContextModuleDescription(RentCarContextResources.BrandModelPlural, "BrandModelCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.BrandModels)),
+                new RentCarContextModuleDescription(RentCarContextResources.VehiclePlural, "VehicleCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Vehicles)),
                 new RentCarContextModuleDescription(RentCarContextResources.FuelTypePlural, "FuelTypeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.FuelTypes)),
                 new RentCarContextModuleDescription(RentCarContextResources.InspectionPlural, "InspectionCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Inspections)),
-                new RentCarContextModuleDescription(RentCarContextResources.VehiclePlural, "VehicleCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Vehicles)),
-                new RentCarContextModuleDescription(RentCarContextResources.ModelPlural, "ModelCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Models)),
-                new RentCarContextModuleDescription(RentCarContextResources.VehicleTypePlural, "VehicleTypeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.VehicleTypes)),
+                new RentCarContextModuleDescription(RentCarContextResources.ClientPlural, "ClientCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Clients)),
                 new RentCarContextModuleDescription(RentCarContextResources.RentPlural, "RentCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Rents)),
+                new RentCarContextModuleDescription(RentCarContextResources.EmployeePlural, "EmployeeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.Employees)),
+                new RentCarContextModuleDescription(RentCarContextResources.VehicleTypePlural, "VehicleTypeCollectionView", TablesGroup, GetPeekCollectionViewModelFactory(x => x.VehicleTypes)),
 			};
         }
                 		protected override void OnActiveModuleChanged(RentCarContextModuleDescription oldModule) {

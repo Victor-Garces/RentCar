@@ -5,7 +5,7 @@ using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
 using DXApplication1.Forms.RentCarContextDataModel;
 using DXApplication1.Forms.Common;
-using RentCar.DataLayer.Models;
+using Core.Models;
 
 namespace DXApplication1.Forms.ViewModels {
 

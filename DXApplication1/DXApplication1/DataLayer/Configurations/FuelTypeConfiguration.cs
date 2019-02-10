@@ -1,17 +1,13 @@
-﻿using RentCar.DataLayer.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Core.Models;
 using System.Data.Entity.ModelConfiguration;
 
-namespace RentCar.DataLayer.Configurations
+namespace Persistence.EntitiesConfigurations
 {
-    internal class FuelTypeConfiguration : EntityTypeConfiguration<FuelType>
+    internal sealed class FuelTypeConfiguration: EntityTypeConfiguration<FuelType>
     {
-        internal FuelTypeConfiguration()
+        public FuelTypeConfiguration()
         {
-            HasKey(caseFile => caseFile.Id);
-            Property(caseFile => caseFile.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(caseFile => caseFile.Status).IsRequired();
-            Property(caseFile => caseFile.Description).IsRequired();
+            HasKey(fuel => fuel.Id);
         }
     }
 }

@@ -1,17 +1,16 @@
-﻿using RentCar.DataLayer.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using Core.Models;
 using System.Data.Entity.ModelConfiguration;
 
-namespace RentCar.DataLayer.Configurations
+namespace Persistence.EntitiesConfigurations
 {
-    internal class BrandConfiguration : EntityTypeConfiguration<Brand>
+    internal sealed class BrandConfiguration: EntityTypeConfiguration<Brand>
     {
-        internal BrandConfiguration()
+        /// <summary>
+        /// Creates an instance of <see cref="BrandConfiguration"/>
+        /// </summary>
+        public BrandConfiguration()
         {
-            HasKey(caseFile => caseFile.Id);
-            Property(caseFile => caseFile.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(caseFile => caseFile.Description).IsRequired();
-            Property(caseFile => caseFile.Status).IsRequired();
+            HasKey(brand => brand.Id);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="DXApplication1.Forms.Views.EmployeeView"
+﻿<UserControl x:Class="DXApplication1.Forms.Views.BrandModelView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
@@ -16,7 +16,7 @@
         xmlns:localization="clr-namespace:DXApplication1.Forms.Localization"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="600" DataContext="{dxmvvm:ViewModelSource viewModel:EmployeeViewModel}">
+        mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="600" DataContext="{dxmvvm:ViewModelSource viewModel:BrandModelViewModel}">
     <UserControl.Resources>
         <ResourceDictionary Source="../../Resources/EntityViewResources.xaml" />
     </UserControl.Resources>
@@ -30,33 +30,37 @@
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
             <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemName" Binding="{Binding Entity.Name, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemIdentification" Binding="{Binding Entity.Identification, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemIdentificationType" Binding="{Binding Entity.IdentificationType, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemWorkload" Binding="{Binding Entity.Workload, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemPercentCommission" Binding="{Binding Entity.PercentCommission, UpdateSourceTrigger=PropertyChanged}" />
-            <dxlc:DataLayoutItem x:Name="layoutItemAdmissionDate" Binding="{Binding Entity.AdmissionDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemUpdateDate" Binding="{Binding Entity.UpdateDate, UpdateSourceTrigger=PropertyChanged}" />
+            <dxlc:DataLayoutItem x:Name="layoutItemBrand" Binding="{Binding Entity.Brand, Mode=OneTime}">
+                <dxg:LookUpEdit Style="{StaticResource EntityView.LookUpEdit}" DataContext="{Binding ElementName=layoutControl, Path=DataContext}" EditValue="{Binding Entity.BrandId, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True, NotifyOnSourceUpdated=True}" ItemsSource="{Binding LookUpBrands.Entities}" ValueMember="Id" DisplayMember="Description">
+                    <dxg:LookUpEdit.PopupContentTemplate>
+                        <ControlTemplate TargetType="ContentControl">
+                            <dxg:GridControl x:Name="PART_GridControl" ShowBorder="False" ShowLoadingPanel="{Binding LookUpBrands.IsLoading}" />
+                        </ControlTemplate>
+                    </dxg:LookUpEdit.PopupContentTemplate>
+                </dxg:LookUpEdit>
+            </dxlc:DataLayoutItem>
             <dxlc:LayoutGroup x:Name="Tabs" View="Tabs" MinHeight="250">
-                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding EmployeeRentsDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:RentCarContextResources.RentPlural}">
-                    <dxg:GridControl x:Name="EmployeeRentsDetailsGrid" dx:DXSerializer.SerializationID="EmployeeRentsDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
+                <dxlc:LayoutGroup Style="{StaticResource EntityView.Detail.Container}" DataContext="{Binding BrandModelVehiclesDetails}" dxlc:LayoutControl.TabHeader="{x:Static localization:RentCarContextResources.VehiclePlural}">
+                    <dxg:GridControl x:Name="BrandModelVehiclesDetailsGrid" dx:DXSerializer.SerializationID="BrandModelVehiclesDetailsGrid" Style="{StaticResource EntityView.Detail.GridControl.Editable}">
                         <dxg:GridControl.View>
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
                             <dxg:GridColumn IsSmart="True" FieldName="Id" />
-                            <dxg:GridColumn IsSmart="True" FieldName="RentDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="ReturnDate" />
-                            <dxg:GridColumn IsSmart="True" FieldName="AmountPerDay" />
-                            <dxg:GridColumn IsSmart="True" FieldName="DayQuantity" />
-                            <dxg:GridColumn IsSmart="True" FieldName="Comment" />
+                            <dxg:GridColumn IsSmart="True" FieldName="Description" />
+                            <dxg:GridColumn IsSmart="True" FieldName="ChassisNumber" />
+                            <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />
+                            <dxg:GridColumn IsSmart="True" FieldName="LicensePlate" />
                             <dxg:GridColumn IsSmart="True" FieldName="IsActive" />
                             <dxg:GridColumn IsSmart="True" FieldName="CreationDate" />
                             <dxg:GridColumn IsSmart="True" FieldName="UpdateDate" />
-                            <dxg:GridColumn FieldName="Client.Name" Header="{x:Static localization:RentCarContextResources.Rent_Client}" ReadOnly="True" />
-                            <dxg:GridColumn FieldName="Vehicle.Description" Header="{x:Static localization:RentCarContextResources.Rent_Vehicle}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="Brand.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_Brand}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="FuelType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_FuelType}" ReadOnly="True" />
+                            <dxg:GridColumn FieldName="VehicleType.Description" Header="{x:Static localization:RentCarContextResources.Vehicle_VehicleType}" ReadOnly="True" />
                         </dxg:GridControl.Columns>
                         <dxg:GridControl.TotalSummary>
                             <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />

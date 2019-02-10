@@ -72,128 +72,38 @@
     <data name="Brand_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-    <data name="Brand_Status" xml:space="preserve">
-    <value>Status</value>
+    <data name="Brand_IsActive" xml:space="preserve">
+    <value>Is Active</value>
   </data>
-    <data name="Client" xml:space="preserve">
-    <value>Client</value>
+    <data name="Brand_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
   </data>
-    <data name="ClientPlural" xml:space="preserve">
-    <value>Clients</value>
+    <data name="Brand_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
   </data>
-    <data name="Client_Id" xml:space="preserve">
+    <data name="BrandModel" xml:space="preserve">
+    <value>Brand Model</value>
+  </data>
+    <data name="BrandModelPlural" xml:space="preserve">
+    <value>Brand Models</value>
+  </data>
+    <data name="BrandModel_Id" xml:space="preserve">
     <value>Id</value>
   </data>
-    <data name="Client_Name" xml:space="preserve">
-    <value>Name</value>
+    <data name="BrandModel_IsActive" xml:space="preserve">
+    <value>Is Active</value>
   </data>
-    <data name="Client_Identification" xml:space="preserve">
-    <value>Identification</value>
-  </data>
-    <data name="Client_CrCard" xml:space="preserve">
-    <value>Cr Card</value>
-  </data>
-    <data name="Client_CreditLimit" xml:space="preserve">
-    <value>Credit Limit</value>
-  </data>
-    <data name="Client_PersonType" xml:space="preserve">
-    <value>Person Type</value>
-  </data>
-    <data name="Client_Status" xml:space="preserve">
-    <value>Status</value>
-  </data>
-    <data name="Employee" xml:space="preserve">
-    <value>Employee</value>
-  </data>
-    <data name="EmployeePlural" xml:space="preserve">
-    <value>Employees</value>
-  </data>
-    <data name="Employee_Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
-    <data name="Employee_Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-    <data name="Employee_Identification" xml:space="preserve">
-    <value>Identification</value>
-  </data>
-    <data name="Employee_WorkShift" xml:space="preserve">
-    <value>Work Shift</value>
-  </data>
-    <data name="Employee_PercentCommission" xml:space="preserve">
-    <value>Percent Commission</value>
-  </data>
-    <data name="Employee_AdmissionDate" xml:space="preserve">
-    <value>Admission Date</value>
-  </data>
-    <data name="Employee_Status" xml:space="preserve">
-    <value>Status</value>
-  </data>
-    <data name="FuelType" xml:space="preserve">
-    <value>Fuel Type</value>
-  </data>
-    <data name="FuelTypePlural" xml:space="preserve">
-    <value>Fuel Types</value>
-  </data>
-    <data name="FuelType_Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
-    <data name="FuelType_Description" xml:space="preserve">
+    <data name="BrandModel_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-    <data name="FuelType_Status" xml:space="preserve">
-    <value>Status</value>
+    <data name="BrandModel_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
   </data>
-    <data name="Inspection" xml:space="preserve">
-    <value>Inspection</value>
+    <data name="BrandModel_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
   </data>
-    <data name="InspectionPlural" xml:space="preserve">
-    <value>Inspections</value>
-  </data>
-    <data name="Inspection_Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
-    <data name="Inspection_HasCarvings" xml:space="preserve">
-    <value>Has Carvings</value>
-  </data>
-    <data name="Inspection_FuelAmount" xml:space="preserve">
-    <value>Fuel Amount</value>
-  </data>
-    <data name="Inspection_HasSpareRubber" xml:space="preserve">
-    <value>Has Spare Rubber</value>
-  </data>
-    <data name="Inspection_HasACat" xml:space="preserve">
-    <value>Has ACat</value>
-  </data>
-    <data name="Inspection_HasGlassBreaks" xml:space="preserve">
-    <value>Has Glass Breaks</value>
-  </data>
-    <data name="Inspection_StateFirstRubber" xml:space="preserve">
-    <value>State First Rubber</value>
-  </data>
-    <data name="Inspection_StateSecondRubber" xml:space="preserve">
-    <value>State Second Rubber</value>
-  </data>
-    <data name="Inspection_StateThirdRubber" xml:space="preserve">
-    <value>State Third Rubber</value>
-  </data>
-    <data name="Inspection_StateFourthRubber" xml:space="preserve">
-    <value>State Fourth Rubber</value>
-  </data>
-    <data name="Inspection_Date" xml:space="preserve">
-    <value>Date</value>
-  </data>
-    <data name="Inspection_Status" xml:space="preserve">
-    <value>Status</value>
-  </data>
-    <data name="Inspection_Client" xml:space="preserve">
-    <value>Client</value>
-  </data>
-    <data name="Inspection_Employee" xml:space="preserve">
-    <value>Employee</value>
-  </data>
-    <data name="Inspection_Vehicle" xml:space="preserve">
-    <value>Vehicle</value>
+    <data name="BrandModel_Brand" xml:space="preserve">
+    <value>Brand</value>
   </data>
     <data name="Vehicle" xml:space="preserve">
     <value>Vehicle</value>
@@ -213,41 +123,206 @@
     <data name="Vehicle_MotorNumber" xml:space="preserve">
     <value>Motor Number</value>
   </data>
-    <data name="Vehicle_PlateNumber" xml:space="preserve">
-    <value>Plate Number</value>
+    <data name="Vehicle_LicensePlate" xml:space="preserve">
+    <value>License Plate</value>
   </data>
-    <data name="Vehicle_Status" xml:space="preserve">
-    <value>Status</value>
+    <data name="Vehicle_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+    <data name="Vehicle_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="Vehicle_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
   </data>
     <data name="Vehicle_Brand" xml:space="preserve">
     <value>Brand</value>
   </data>
+    <data name="Vehicle_BrandModel" xml:space="preserve">
+    <value>Brand Model</value>
+  </data>
     <data name="Vehicle_FuelType" xml:space="preserve">
     <value>Fuel Type</value>
-  </data>
-    <data name="Vehicle_Model" xml:space="preserve">
-    <value>Model</value>
   </data>
     <data name="Vehicle_VehicleType" xml:space="preserve">
     <value>Vehicle Type</value>
   </data>
-    <data name="Model" xml:space="preserve">
-    <value>Model</value>
+    <data name="FuelType" xml:space="preserve">
+    <value>Fuel Type</value>
   </data>
-    <data name="ModelPlural" xml:space="preserve">
-    <value>Models</value>
+    <data name="FuelTypePlural" xml:space="preserve">
+    <value>Fuel Types</value>
   </data>
-    <data name="Model_Id" xml:space="preserve">
+    <data name="FuelType_Id" xml:space="preserve">
     <value>Id</value>
   </data>
-    <data name="Model_Description" xml:space="preserve">
+    <data name="FuelType_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-    <data name="Model_Status" xml:space="preserve">
-    <value>Status</value>
+    <data name="FuelType_IsActive" xml:space="preserve">
+    <value>Is Active</value>
   </data>
-    <data name="Model_Brand" xml:space="preserve">
-    <value>Brand</value>
+    <data name="FuelType_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="FuelType_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
+  </data>
+    <data name="Inspection" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+    <data name="InspectionPlural" xml:space="preserve">
+    <value>Inspections</value>
+  </data>
+    <data name="Inspection_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Inspection_HasGrazes" xml:space="preserve">
+    <value>Has Grazes</value>
+  </data>
+    <data name="Inspection_FuelQuantity" xml:space="preserve">
+    <value>Fuel Quantity</value>
+  </data>
+    <data name="Inspection_RubberOne" xml:space="preserve">
+    <value>Rubber One</value>
+  </data>
+    <data name="Inspection_RubberTwo" xml:space="preserve">
+    <value>Rubber Two</value>
+  </data>
+    <data name="Inspection_RubberThree" xml:space="preserve">
+    <value>Rubber Three</value>
+  </data>
+    <data name="Inspection_RubberFour" xml:space="preserve">
+    <value>Rubber Four</value>
+  </data>
+    <data name="Inspection_HasReplacementRubber" xml:space="preserve">
+    <value>Has Replacement Rubber</value>
+  </data>
+    <data name="Inspection_HasHydraulicJack" xml:space="preserve">
+    <value>Has Hydraulic Jack</value>
+  </data>
+    <data name="Inspection_HasGlassBreaks" xml:space="preserve">
+    <value>Has Glass Breaks</value>
+  </data>
+    <data name="Inspection_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="Inspection_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
+  </data>
+    <data name="Inspection_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="Inspection_Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+    <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="ClientPlural" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+    <data name="Client_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Client_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+    <data name="Client_Identification" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+    <data name="Client_CreditCarNumber" xml:space="preserve">
+    <value>Credit Car Number</value>
+  </data>
+    <data name="Client_CreditLimit" xml:space="preserve">
+    <value>Credit Limit</value>
+  </data>
+    <data name="Client_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+    <data name="Client_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="Client_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
+  </data>
+    <data name="Rent" xml:space="preserve">
+    <value>Rent</value>
+  </data>
+    <data name="RentPlural" xml:space="preserve">
+    <value>Rents</value>
+  </data>
+    <data name="Rent_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Rent_RentDate" xml:space="preserve">
+    <value>Rent Date</value>
+  </data>
+    <data name="Rent_ReturnDate" xml:space="preserve">
+    <value>Return Date</value>
+  </data>
+    <data name="Rent_AmountPerDay" xml:space="preserve">
+    <value>Amount Per Day</value>
+  </data>
+    <data name="Rent_DayQuantity" xml:space="preserve">
+    <value>Day Quantity</value>
+  </data>
+    <data name="Rent_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+    <data name="Rent_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+    <data name="Rent_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="Rent_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
+  </data>
+    <data name="Rent_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+    <data name="Rent_Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+    <data name="Rent_Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+    <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+    <data name="EmployeePlural" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+    <data name="Employee_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+    <data name="Employee_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+    <data name="Employee_Identification" xml:space="preserve">
+    <value>Identification</value>
+  </data>
+    <data name="Employee_IdentificationType" xml:space="preserve">
+    <value>Identification Type</value>
+  </data>
+    <data name="Employee_Workload" xml:space="preserve">
+    <value>Workload</value>
+  </data>
+    <data name="Employee_PercentCommission" xml:space="preserve">
+    <value>Percent Commission</value>
+  </data>
+    <data name="Employee_AdmissionDate" xml:space="preserve">
+    <value>Admission Date</value>
+  </data>
+    <data name="Employee_IsActive" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+    <data name="Employee_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+    <data name="Employee_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
   </data>
     <data name="VehicleType" xml:space="preserve">
     <value>Vehicle Type</value>
@@ -261,43 +336,13 @@
     <data name="VehicleType_Description" xml:space="preserve">
     <value>Description</value>
   </data>
-    <data name="VehicleType_Status" xml:space="preserve">
-    <value>Status</value>
+    <data name="VehicleType_IsActive" xml:space="preserve">
+    <value>Is Active</value>
   </data>
-    <data name="Rent" xml:space="preserve">
-    <value>Rent</value>
+    <data name="VehicleType_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
   </data>
-    <data name="RentPlural" xml:space="preserve">
-    <value>Rents</value>
-  </data>
-    <data name="Rent_Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
-    <data name="Rent_RentDateTime" xml:space="preserve">
-    <value>Rent Date Time</value>
-  </data>
-    <data name="Rent_ReturnDateTime" xml:space="preserve">
-    <value>Return Date Time</value>
-  </data>
-    <data name="Rent_AmountPerDay" xml:space="preserve">
-    <value>Amount Per Day</value>
-  </data>
-    <data name="Rent_DaysQuantity" xml:space="preserve">
-    <value>Days Quantity</value>
-  </data>
-    <data name="Rent_Comment" xml:space="preserve">
-    <value>Comment</value>
-  </data>
-    <data name="Rent_Status" xml:space="preserve">
-    <value>Status</value>
-  </data>
-    <data name="Rent_Client" xml:space="preserve">
-    <value>Client</value>
-  </data>
-    <data name="Rent_Employee" xml:space="preserve">
-    <value>Employee</value>
-  </data>
-    <data name="Rent_Vehicle" xml:space="preserve">
-    <value>Vehicle</value>
+    <data name="VehicleType_UpdateDate" xml:space="preserve">
+    <value>Update Date</value>
   </data>
 </root>
