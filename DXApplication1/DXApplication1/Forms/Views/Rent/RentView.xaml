@@ -29,7 +29,6 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemRentDate" Binding="{Binding Entity.RentDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemReturnDate" Binding="{Binding Entity.ReturnDate, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemAmountPerDay" Binding="{Binding Entity.AmountPerDay, UpdateSourceTrigger=PropertyChanged}" />

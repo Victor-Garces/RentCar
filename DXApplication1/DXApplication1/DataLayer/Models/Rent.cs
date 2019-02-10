@@ -1,7 +1,7 @@
 ﻿using System;
 using Core.Contracts;
 
-namespace Core.Models
+namespace DXApplication1.DataLayer.Models
 {
     public class Rent: IEntity
     {

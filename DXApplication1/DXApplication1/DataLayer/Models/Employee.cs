@@ -1,10 +1,11 @@
-﻿using Core.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Core.Contracts;
+using Core.Enums;
 
-namespace Core.Models
+namespace DXApplication1.DataLayer.Models
 {
-    public class Employee
+    public class Employee : IEntity
     {
         public int Id { get; set; }
 

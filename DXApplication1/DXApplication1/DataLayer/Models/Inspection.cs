@@ -1,8 +1,8 @@
-﻿using Core.Contracts;
+﻿using System;
+using Core.Contracts;
 using Core.Enums;
-using System;
 
-namespace Core.Models
+namespace DXApplication1.DataLayer.Models
 {
     public  class Inspection: IEntity
     {

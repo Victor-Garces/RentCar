@@ -1,7 +1,7 @@
-﻿using Core.Models;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
+using DXApplication1.DataLayer.Models;
 
-namespace Persistence.EntitiesConfigurations
+namespace DXApplication1.DataLayer.Configurations
 {
     internal sealed class ClientConfiguration: EntityTypeConfiguration<Client>
     {

@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using Core.Models;
+using DXApplication1.DataLayer.Models;
 
-namespace Persistence.EntitiesConfigurations
+namespace DXApplication1.DataLayer.Configurations
 {
     internal sealed class VehicleConfiguration: EntityTypeConfiguration<Vehicle>
     {

@@ -41,7 +41,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="Description" />
                             <dxg:GridColumn IsSmart="True" FieldName="ChassisNumber" />
                             <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />

@@ -44,7 +44,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasGrazes" />
                             <dxg:GridColumn IsSmart="True" FieldName="FuelQuantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="RubberOne" />
@@ -80,7 +79,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="RentDate" />
                             <dxg:GridColumn IsSmart="True" FieldName="ReturnDate" />
                             <dxg:GridColumn IsSmart="True" FieldName="AmountPerDay" />

@@ -29,7 +29,6 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemChassisNumber" Binding="{Binding Entity.ChassisNumber, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemMotorNumber" Binding="{Binding Entity.MotorNumber, UpdateSourceTrigger=PropertyChanged}" />
@@ -80,7 +79,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="HasGrazes" />
                             <dxg:GridColumn IsSmart="True" FieldName="FuelQuantity" />
                             <dxg:GridColumn IsSmart="True" FieldName="RubberOne" />
@@ -116,7 +114,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="RentDate" />
                             <dxg:GridColumn IsSmart="True" FieldName="ReturnDate" />
                             <dxg:GridColumn IsSmart="True" FieldName="AmountPerDay" />

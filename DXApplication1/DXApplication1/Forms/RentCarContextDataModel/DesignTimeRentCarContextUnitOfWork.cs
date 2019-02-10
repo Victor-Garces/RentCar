@@ -1,10 +1,10 @@
-﻿using Core.Models;
-using DevExpress.Mvvm.DataModel;
+﻿using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.DataModel.DesignTime;
 using RentCar.DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DXApplication1.DataLayer.Models;
 
 namespace DXApplication1.Forms.RentCarContextDataModel {
 

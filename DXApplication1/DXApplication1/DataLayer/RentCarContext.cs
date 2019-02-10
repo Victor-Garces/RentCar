@@ -1,6 +1,6 @@
-﻿using Core.Models;
-using Persistence.EntitiesConfigurations;
-using System.Data.Entity;
+﻿using System.Data.Entity;
+using DXApplication1.DataLayer.Configurations;
+using DXApplication1.DataLayer.Models;
 
 namespace RentCar.DataLayer
 {

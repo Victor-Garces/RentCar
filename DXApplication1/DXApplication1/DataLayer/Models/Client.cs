@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Core.Contracts;
 
-namespace Core.Models
+namespace DXApplication1.DataLayer.Models
 {
-    public class Client
+    public class Client : IEntity
     {
         public int Id { get; set; }
 

@@ -29,7 +29,6 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemDescription" Binding="{Binding Entity.Description, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemIsActive" Binding="{Binding Entity.IsActive, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemCreationDate" Binding="{Binding Entity.CreationDate, UpdateSourceTrigger=PropertyChanged}" />
@@ -41,7 +40,6 @@
                             <dxg:TableView Style="{StaticResource EntityView.Detail.TableView}" />
                         </dxg:GridControl.View>
                         <dxg:GridControl.Columns>
-                            <dxg:GridColumn IsSmart="True" FieldName="Id" />
                             <dxg:GridColumn IsSmart="True" FieldName="Description" />
                             <dxg:GridColumn IsSmart="True" FieldName="ChassisNumber" />
                             <dxg:GridColumn IsSmart="True" FieldName="MotorNumber" />

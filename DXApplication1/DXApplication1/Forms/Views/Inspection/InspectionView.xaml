@@ -29,7 +29,6 @@
             <dxwui:AppBarButton Style="{StaticResource EntityView.Command.Delete}" />
         </dxwui:AppBar>
         <dxlc:LayoutControl x:Name="layoutControl" Style="{StaticResource EntityView.LayoutControl}">
-            <dxlc:DataLayoutItem x:Name="layoutItemId" Binding="{Binding Entity.Id, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:LayoutControl}}}" />
             <dxlc:DataLayoutItem x:Name="layoutItemHasGrazes" Binding="{Binding Entity.HasGrazes, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemFuelQuantity" Binding="{Binding Entity.FuelQuantity, UpdateSourceTrigger=PropertyChanged}" />
             <dxlc:DataLayoutItem x:Name="layoutItemRubberOne" Binding="{Binding Entity.RubberOne, UpdateSourceTrigger=PropertyChanged}" />
