@@ -1,8 +1,11 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
+using System.Linq;
+using DXApplication1.Contracts;
 using DXApplication1.DataLayer.Configurations;
 using DXApplication1.DataLayer.Models;
 
-namespace RentCar.DataLayer
+namespace DXApplication1.DataLayer
 {
     public class RentCarContext : DbContext
     {
@@ -34,6 +37,27 @@ namespace RentCar.DataLayer
             modelBuilder.Configurations.Add(new RentConfiguration());
             modelBuilder.Configurations.Add(new VehicleConfiguration());
             modelBuilder.Configurations.Add(new VehicleTypeConfiguration());
+        }
+
+        public override int SaveChanges()
+        {
+            CreateAuditLogInformation();
+            return base.SaveChanges();
+        }
+
+        public void CreateAuditLogInformation()
+        {
+            foreach (var entry in ChangeTracker.Entries<IAudit>().Where(x => x.State == EntityState.Added))
+            {
+                var entity = entry.Entity;
+                entity.CreationDate = DateTime.Now;
+            }
+
+            foreach (var entry in ChangeTracker.Entries<IAudit>().Where(x => x.State == EntityState.Modified))
+            {
+                var entity = entry.Entity;
+                entity.UpdateDate = DateTime.Now;
+            }
         }
     }
 }

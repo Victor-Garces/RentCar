@@ -1,6 +1,5 @@
 ﻿using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.DataModel.DesignTime;
-using RentCar.DataLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;

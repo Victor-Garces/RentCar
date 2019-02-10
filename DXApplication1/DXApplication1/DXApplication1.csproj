@@ -334,6 +334,10 @@
     <Compile Include="Migrations\201902100129153_AddedTable.Designer.cs">
       <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902100251293_UpdateDateTimeToDateTimeOffSet.cs" />
+    <Compile Include="Migrations\201902100251293_UpdateDateTimeToDateTimeOffSet.Designer.cs">
+      <DependentUpon>201902100251293_UpdateDateTimeToDateTimeOffSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -364,6 +368,9 @@
     <EmbeddedResource Include="Forms\Localization\ViewResources.ru-RU.resx" />
     <EmbeddedResource Include="Migrations\201902100129153_AddedTable.resx">
       <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902100251293_UpdateDateTimeToDateTimeOffSet.resx">
+      <DependentUpon>201902100251293_UpdateDateTimeToDateTimeOffSet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

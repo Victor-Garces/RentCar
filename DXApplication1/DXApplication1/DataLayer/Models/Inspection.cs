@@ -34,7 +34,7 @@ namespace DXApplication1.DataLayer.Models
 
         public bool HasGlassBreaks { get; set; }
 
-        public DateTime CreationDate { get; set; }
-        public DateTime UpdateDate { get; set; }
+        public DateTimeOffset CreationDate { get; set; }
+        public DateTimeOffset UpdateDate { get; set; }
     }
 }

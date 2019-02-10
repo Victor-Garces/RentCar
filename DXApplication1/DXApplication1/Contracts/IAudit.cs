@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Core.Contracts
+namespace DXApplication1.Contracts
 {
     public interface IAudit
     {
-        DateTime CreationDate { get; set; }
-        DateTime UpdateDate { get; set; }
+        DateTimeOffset CreationDate { get; set; }
+        DateTimeOffset UpdateDate { get; set; }
     }
 }

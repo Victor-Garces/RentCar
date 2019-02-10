@@ -25,8 +25,7 @@ namespace DXApplication1.DataLayer.Models
 
         public ISet<Rent> Rents { get; set; }
 
-        public DateTime CreationDate { get; set; }
-
-        public DateTime UpdateDate { get; set; }
+        public DateTimeOffset CreationDate { get; set; }
+        public DateTimeOffset UpdateDate { get; set; }
     }
 }

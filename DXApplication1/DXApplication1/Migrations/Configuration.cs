@@ -1,3 +1,5 @@
+using DXApplication1.DataLayer;
+
 namespace RentCar.Migrations
 {
     using System;
@@ -5,14 +7,14 @@ namespace RentCar.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<RentCar.DataLayer.RentCarContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<RentCarContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(RentCar.DataLayer.RentCarContext context)
+        protected override void Seed(RentCarContext context)
         {
             //  This method will be called after migrating to the latest version.
 

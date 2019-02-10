@@ -1,7 +1,6 @@
 ﻿using DevExpress.Mvvm.DataAnnotations;
 using DXApplication1.DataLayer.Models;
 using DXApplication1.Forms.Localization;
-using RentCar.DataLayer;
 
 namespace DXApplication1.Forms.RentCarContextDataModel {
 
