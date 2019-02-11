@@ -25,7 +25,7 @@ namespace DXApplication1.Forms
                 {
                     Hide();
                     var mainWindow = new MainWindow(false);
-                    mainWindow.Show();
+                    mainWindow.ShowDialog();
                 }
                 else
                 {
