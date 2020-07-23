@@ -4,6 +4,7 @@ using DXApplication1.DataLayer.Models;
 using System;
 using System.Data.Entity;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace DXApplication1.DataLayer
 {
@@ -43,12 +44,22 @@ namespace DXApplication1.DataLayer
 
         public override int SaveChanges()
         {
-            CreateAuditLogInformation();
-            return base.SaveChanges();
+            try
+            {
+                var any = CreateAuditLogInformation();
+                if (any)
+                {
+                    return base.SaveChanges();
+                }
+
+                return 1;
+            }
         }
 
-        public void CreateAuditLogInformation()
+        public bool CreateAuditLogInformation()
         {
+            bool any = true;
+
             foreach (var entry in ChangeTracker.Entries<IAudit>().Where(x => x.State == EntityState.Added))
             {
                 var entity = entry.Entity;
@@ -67,6 +78,20 @@ namespace DXApplication1.DataLayer
                 string pass = EncryptString(entity.Password);
                 entity.Password = pass;
             }
+
+            foreach (var entry in ChangeTracker.Entries<IEmployee>().Where(x => x.State == EntityState.Added))
+            {
+                var entity = entry.Entity;
+                any = ValidaCedula(entity.Identification);
+            }
+
+            foreach (var entry in ChangeTracker.Entries<IEmployee>().Where(x => x.State == EntityState.Modified))
+            {
+                var entity = entry.Entity;
+                any = ValidaCedula(entity.Identification);
+            }
+
+            return any;
         }
 
         public static string EncryptString(string inputString)
@@ -75,6 +100,16 @@ namespace DXApplication1.DataLayer
             data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
             string hash = System.Text.Encoding.ASCII.GetString(data);
             return hash;
+        }
+
+        public bool ValidaCedula(string cedula)
+        {
+            if(cedula.Length >= 10)
+            {
+                return true;
+            }
+            MessageBox.Show("Identificación inválida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
         }
     }
 }

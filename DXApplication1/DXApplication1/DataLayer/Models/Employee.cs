@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using Core.Contracts;
 using Core.Enums;
+using DXApplication1.Contracts;
 
 namespace DXApplication1.DataLayer.Models
 {
-    public class Employee : IEntity
+    public class Employee : IEntity, IEmployee
     {
         public int Id { get; set; }
 

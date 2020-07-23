@@ -18,30 +18,38 @@ namespace DXApplication1.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var context = new RentCarContext())
+            try
             {
-                string username = usernameText.Text;
-                string password = RentCarContext.EncryptString(passwordText.Text);
+                using (var context = new RentCarContext())
+                {
+                    string username = usernameText.Text;
+                    string password = RentCarContext.EncryptString(passwordText.Text);
 
-                var currentUser = context.Users.FirstOrDefault(user => user.Username == username && user.Password == password);
+                    var currentUser = context.Users.FirstOrDefault(user => user.Username == username && user.Password == password);
 
-                if (currentUser != null && currentUser.IsActive)
-                {
-                    Hide();
-                    Role = currentUser.Rol;
-                    var mainWindow = new RentCarContextView();
-                    DevExpress.XtraEditors.XtraDialog.Show(mainWindow);
+                    if (currentUser != null && currentUser.IsActive)
+                    {
+                        Hide();
+                        Role = currentUser.Rol;
+                        var mainWindow = new RentCarContextView();
+                        DevExpress.XtraEditors.XtraDialog.Show(mainWindow);
+                    }
+                    else if (currentUser != null && !currentUser.IsActive)
+                    {
+                        MessageBox.Show("Usuario desactivado", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Credenciales incorrectas", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else if (currentUser != null && !currentUser.IsActive)
-                {
-                    MessageBox.Show("Usuario desactivado", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    MessageBox.Show("Credenciales incorrectas", "Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch(Exception)
+            {
+                var mainWindow = new RentCarContextView();
+                DevExpress.XtraEditors.XtraDialog.Show(mainWindow);
             }
         }
 
