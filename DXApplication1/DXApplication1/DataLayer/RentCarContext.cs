@@ -60,6 +60,21 @@ namespace DXApplication1.DataLayer
                 var entity = entry.Entity;
                 entity.UpdateDate = DateTime.Now;
             }
+
+            foreach (var entry in ChangeTracker.Entries<IUser>().Where(x => x.State == EntityState.Added))
+            {
+                var entity = entry.Entity;
+                string pass = EncryptString(entity.Password);
+                entity.Password = pass;
+            }
+        }
+
+        public static string EncryptString(string inputString)
+        {
+            byte[] data = System.Text.Encoding.ASCII.GetBytes(inputString);
+            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+            string hash = System.Text.Encoding.ASCII.GetString(data);
+            return hash;
         }
     }
 }

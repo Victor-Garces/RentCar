@@ -3,9 +3,9 @@ using System.Linq;
 using DevExpress.Mvvm.POCO;
 using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.ViewModel;
-using DXApplication1.DataLayer.Models;
 using DXApplication1.Forms.RentCarContextDataModel;
 using DXApplication1.Forms.Common;
+using DXApplication1.DataLayer.Models;
 
 namespace DXApplication1.Forms.ViewModels {
 

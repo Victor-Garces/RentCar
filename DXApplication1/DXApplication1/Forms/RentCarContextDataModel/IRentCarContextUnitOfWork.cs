@@ -1,8 +1,9 @@
 ﻿using DevExpress.Mvvm.DataModel;
+using DXApplication1.DataLayer;
+using DXApplication1.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DXApplication1.DataLayer.Models;
 
 namespace DXApplication1.Forms.RentCarContextDataModel {
 
@@ -55,5 +56,10 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
         /// The VehicleType entities repository.
         /// </summary>
 		IRepository<VehicleType, int> VehicleTypes { get; }
+        
+        /// <summary>
+        /// The User entities repository.
+        /// </summary>
+		IRepository<User, int> Users { get; }
     }
 }

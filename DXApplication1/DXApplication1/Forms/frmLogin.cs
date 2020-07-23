@@ -1,4 +1,6 @@
-﻿using DXApplication1.DataLayer;
+﻿using Core.Enums;
+using DXApplication1.DataLayer;
+using DXApplication1.Forms.Views.RentCarContextView;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -7,6 +9,8 @@ namespace DXApplication1.Forms
 {
     public partial class frmLogin : DevExpress.XtraEditors.XtraForm
     {
+        public static UserRole Role { get; set; }
+
         public frmLogin()
         {
             InitializeComponent();
@@ -17,15 +21,21 @@ namespace DXApplication1.Forms
             using (var context = new RentCarContext())
             {
                 string username = usernameText.Text;
-                string password = passwordText.Text;
+                string password = RentCarContext.EncryptString(passwordText.Text);
 
-                var any = context.Users.Any(user => user.Username == username && user.Password == password && user.IsActive);
+                var currentUser = context.Users.FirstOrDefault(user => user.Username == username && user.Password == password);
 
-                if (any)
+                if (currentUser != null && currentUser.IsActive)
                 {
                     Hide();
-                    var mainWindow = new MainWindow(false);
-                    mainWindow.ShowDialog();
+                    Role = currentUser.Rol;
+                    var mainWindow = new RentCarContextView();
+                    DevExpress.XtraEditors.XtraDialog.Show(mainWindow);
+                }
+                else if (currentUser != null && !currentUser.IsActive)
+                {
+                    MessageBox.Show("Usuario desactivado", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

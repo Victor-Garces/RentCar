@@ -1,10 +1,10 @@
 ﻿using DevExpress.Mvvm.DataModel;
 using DevExpress.Mvvm.DataModel.EF6;
+using DXApplication1.DataLayer;
+using DXApplication1.DataLayer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DXApplication1.DataLayer;
-using DXApplication1.DataLayer.Models;
 
 namespace DXApplication1.Forms.RentCarContextDataModel {
 
@@ -51,6 +51,10 @@ namespace DXApplication1.Forms.RentCarContextDataModel {
 
         IRepository<VehicleType, int> IRentCarContextUnitOfWork.VehicleTypes {
             get { return GetRepository(x => x.Set<VehicleType>(), (VehicleType x) => x.Id); }
+        }
+
+        IRepository<User, int> IRentCarContextUnitOfWork.Users {
+            get { return GetRepository(x => x.Set<User>(), (User x) => x.Id); }
         }
     }
 }

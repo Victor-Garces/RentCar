@@ -35,7 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.Images.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.Mvvm.v20.1.DataModel, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
@@ -84,7 +90,16 @@
     <Reference Include="DevExpress.Xpf.Themes.Office2016White.v20.1" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -112,104 +127,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="Forms\Resources\CollectionViewResources.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Resources\EntityViewResources.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\BrandModel\BrandModelCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\BrandModel\BrandModelView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Brand\BrandCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Brand\BrandView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Client\ClientCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Client\ClientView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Employee\EmployeeCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Employee\EmployeeView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\FuelType\FuelTypeCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\FuelType\FuelTypeView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Inspection\InspectionCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Inspection\InspectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\RentCarContextView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Rent\RentCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Rent\RentView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\VehicleType\VehicleTypeCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\VehicleType\VehicleTypeView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Vehicle\VehicleCollectionView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Forms\Views\Vehicle\VehicleView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Contracts\IAudit.cs" />
     <Compile Include="Contracts\IEntity.cs" />
+    <Compile Include="Contracts\IUser.cs" />
     <Compile Include="DataLayer\Configurations\BrandConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\BrandModelConfiguration.cs" />
     <Compile Include="DataLayer\Configurations\ClientConfiguration.cs" />
@@ -234,10 +154,10 @@
     <Compile Include="Enums\FuelQuantity.cs" />
     <Compile Include="Enums\IdentificationType.cs" />
     <Compile Include="Enums\PersonType.cs" />
+    <Compile Include="Enums\UserRole.cs" />
     <Compile Include="Enums\Workload.cs" />
     <Compile Include="Forms\Common\CollectionViewModel.cs" />
     <Compile Include="Forms\Common\EntitiesViewModel.cs" />
-    <Compile Include="Forms\Common\InstantFeedbackCollectionViewModel.cs" />
     <Compile Include="Forms\Common\ReadOnlyCollectionViewModel.cs" />
     <Compile Include="Forms\Common\SingleObjectViewModel.cs" />
     <Compile Include="Forms\frmLogin.cs">
@@ -246,19 +166,9 @@
     <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Localization\RentCarContextResources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RentCarContextResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Localization\ViewResources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ViewResources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\RentCarContextDataModel\DesignTimeRentCarContextUnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Forms\RentCarContextDataModel\IRentCarContextUnitOfWork.cs" />
-    <Compile Include="Forms\RentCarContextDataModel\RentCarContextMetadata.cs" />
     <Compile Include="Forms\RentCarContextDataModel\RentCarContextUnitOfWork.cs" />
     <Compile Include="Forms\RentCarContextDataModel\UnitOfWorkSource.cs" />
     <Compile Include="Forms\ViewModels\BrandModel\BrandModelCollectionViewModel.cs" />
@@ -276,73 +186,96 @@
     <Compile Include="Forms\ViewModels\RentCarContextViewModel.cs" />
     <Compile Include="Forms\ViewModels\Rent\RentCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Rent\RentViewModel.cs" />
+    <Compile Include="Forms\ViewModels\User\UserCollectionViewModel.cs" />
+    <Compile Include="Forms\ViewModels\User\UserViewModel.cs" />
     <Compile Include="Forms\ViewModels\VehicleType\VehicleTypeCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\VehicleType\VehicleTypeViewModel.cs" />
     <Compile Include="Forms\ViewModels\Vehicle\VehicleCollectionViewModel.cs" />
     <Compile Include="Forms\ViewModels\Vehicle\VehicleViewModel.cs" />
-    <Compile Include="Forms\Views\BrandModel\BrandModelCollectionView.xaml.cs">
-      <DependentUpon>BrandModelCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\BrandModel\BrandModelCollectionView.cs" />
+    <Compile Include="Forms\Views\BrandModel\BrandModelCollectionView.designer.cs">
+      <DependentUpon>BrandModelCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\BrandModel\BrandModelView.xaml.cs">
-      <DependentUpon>BrandModelView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\BrandModel\BrandModelView.cs" />
+    <Compile Include="Forms\Views\BrandModel\BrandModelView.designer.cs">
+      <DependentUpon>BrandModelView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Brand\BrandCollectionView.xaml.cs">
-      <DependentUpon>BrandCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Brand\BrandCollectionView.cs" />
+    <Compile Include="Forms\Views\Brand\BrandCollectionView.designer.cs">
+      <DependentUpon>BrandCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Brand\BrandView.xaml.cs">
-      <DependentUpon>BrandView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Brand\BrandView.cs" />
+    <Compile Include="Forms\Views\Brand\BrandView.designer.cs">
+      <DependentUpon>BrandView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Client\ClientCollectionView.xaml.cs">
-      <DependentUpon>ClientCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Client\ClientCollectionView.cs" />
+    <Compile Include="Forms\Views\Client\ClientCollectionView.designer.cs">
+      <DependentUpon>ClientCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Client\ClientView.xaml.cs">
-      <DependentUpon>ClientView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Client\ClientView.cs" />
+    <Compile Include="Forms\Views\Client\ClientView.designer.cs">
+      <DependentUpon>ClientView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Employee\EmployeeCollectionView.xaml.cs">
-      <DependentUpon>EmployeeCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Employee\EmployeeCollectionView.cs" />
+    <Compile Include="Forms\Views\Employee\EmployeeCollectionView.designer.cs">
+      <DependentUpon>EmployeeCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Employee\EmployeeView.xaml.cs">
-      <DependentUpon>EmployeeView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Employee\EmployeeView.cs" />
+    <Compile Include="Forms\Views\Employee\EmployeeView.designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\FuelType\FuelTypeCollectionView.xaml.cs">
-      <DependentUpon>FuelTypeCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\FuelType\FuelTypeCollectionView.cs" />
+    <Compile Include="Forms\Views\FuelType\FuelTypeCollectionView.designer.cs">
+      <DependentUpon>FuelTypeCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\FuelType\FuelTypeView.xaml.cs">
-      <DependentUpon>FuelTypeView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\FuelType\FuelTypeView.cs" />
+    <Compile Include="Forms\Views\FuelType\FuelTypeView.designer.cs">
+      <DependentUpon>FuelTypeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Inspection\InspectionCollectionView.xaml.cs">
-      <DependentUpon>InspectionCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Inspection\InspectionCollectionView.cs" />
+    <Compile Include="Forms\Views\Inspection\InspectionCollectionView.designer.cs">
+      <DependentUpon>InspectionCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Inspection\InspectionView.xaml.cs">
-      <DependentUpon>InspectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Inspection\InspectionView.cs" />
+    <Compile Include="Forms\Views\Inspection\InspectionView.designer.cs">
+      <DependentUpon>InspectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\RentCarContextView.xaml.cs">
-      <DependentUpon>RentCarContextView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\RentCarContextView.cs" />
+    <Compile Include="Forms\Views\RentCarContextView.designer.cs">
+      <DependentUpon>RentCarContextView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Rent\RentCollectionView.xaml.cs">
-      <DependentUpon>RentCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Rent\RentCollectionView.cs" />
+    <Compile Include="Forms\Views\Rent\RentCollectionView.designer.cs">
+      <DependentUpon>RentCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Rent\RentView.xaml.cs">
-      <DependentUpon>RentView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\Rent\RentView.cs" />
+    <Compile Include="Forms\Views\Rent\RentView.designer.cs">
+      <DependentUpon>RentView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\VehicleType\VehicleTypeCollectionView.xaml.cs">
-      <DependentUpon>VehicleTypeCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\User\UserCollectionView.cs" />
+    <Compile Include="Forms\Views\User\UserCollectionView.designer.cs">
+      <DependentUpon>UserCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\VehicleType\VehicleTypeView.xaml.cs">
-      <DependentUpon>VehicleTypeView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\User\UserView.cs" />
+    <Compile Include="Forms\Views\User\UserView.designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Vehicle\VehicleCollectionView.xaml.cs">
-      <DependentUpon>VehicleCollectionView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\VehicleType\VehicleTypeCollectionView.cs" />
+    <Compile Include="Forms\Views\VehicleType\VehicleTypeCollectionView.designer.cs">
+      <DependentUpon>VehicleTypeCollectionView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Views\Vehicle\VehicleView.xaml.cs">
-      <DependentUpon>VehicleView.xaml</DependentUpon>
+    <Compile Include="Forms\Views\VehicleType\VehicleTypeView.cs" />
+    <Compile Include="Forms\Views\VehicleType\VehicleTypeView.designer.cs">
+      <DependentUpon>VehicleTypeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Forms\Views\Vehicle\VehicleCollectionView.cs" />
+    <Compile Include="Forms\Views\Vehicle\VehicleCollectionView.designer.cs">
+      <DependentUpon>VehicleCollectionView.cs</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Forms\Views\Vehicle\VehicleView.cs" />
+    <Compile Include="Forms\Views\Vehicle\VehicleView.designer.cs">
+      <DependentUpon>VehicleView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201902100129153_AddedTable.cs" />
     <Compile Include="Migrations\201902100129153_AddedTable.Designer.cs">
       <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
@@ -355,7 +288,12 @@
     <Compile Include="Migrations\201902100352274_AddedUsers.Designer.cs">
       <DependentUpon>201902100352274_AddedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007231559143_AddedUserRole.cs" />
+    <Compile Include="Migrations\202007231559143_AddedUserRole.Designer.cs">
+      <DependentUpon>202007231559143_AddedUserRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -372,20 +310,6 @@
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Localization\RentCarContextResources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>RentCarContextResources.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>DXApplication1.Forms.Localization</CustomToolNamespace>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Localization\ViewResources.de-DE.resx" />
-    <EmbeddedResource Include="Forms\Localization\ViewResources.es-ES.resx" />
-    <EmbeddedResource Include="Forms\Localization\ViewResources.ja-JP.resx" />
-    <EmbeddedResource Include="Forms\Localization\ViewResources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ViewResources.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>DXApplication1.Forms.Localization</CustomToolNamespace>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Localization\ViewResources.ru-RU.resx" />
     <EmbeddedResource Include="Migrations\201902100129153_AddedTable.resx">
       <DependentUpon>201902100129153_AddedTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902100352274_AddedUsers.resx">
       <DependentUpon>201902100352274_AddedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007231559143_AddedUserRole.resx">
+      <DependentUpon>202007231559143_AddedUserRole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
