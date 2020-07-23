@@ -53,7 +53,6 @@ namespace DXApplication1.DataLayer
                 }
 
                 return 1;
-            }
         }
 
         public bool CreateAuditLogInformation()
