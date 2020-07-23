@@ -44,8 +44,6 @@ namespace DXApplication1.DataLayer
 
         public override int SaveChanges()
         {
-            try
-            {
                 var any = CreateAuditLogInformation();
                 if (any)
                 {
